@@ -36,7 +36,14 @@ a {
 }
 
 a:hover {
-  border: 1px solid black;
   border-radius: 4px;
   color: #00b7ff;
+}
+
+.product-images:hover {
+  -webkit-filter: invert(100%);
+}
+
+.product-header {
+  font-family: "Press Start 2P", cursive;
 }
