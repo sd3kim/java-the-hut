@@ -90,10 +90,11 @@ a:hover {
 
 .customizations {
   margin-top: 10px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 10px 80px;
   border-radius: 7px;
   font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .labels > button {
@@ -117,6 +118,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* border: 1px solid black; */
 }
 
 .cup-buttons > button {
@@ -129,13 +131,13 @@ h3 {
 }
 
 .cart-button {
-  margin-left: 1050px;
+  margin-left: 1000px;
   margin-top: 50px;
 }
 .cart-button > button {
   background-color: black;
   color: white;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
   font-family: "Press Start 2P", cursive;
 }
