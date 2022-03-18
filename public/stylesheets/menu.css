@@ -2,32 +2,38 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-img {
-  width: 50px;
-  height: 50px;
+.nav-java {
+  font-family: "Press Start 2P", cursive;
 }
-
-.nav-wrapper {
+nav {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   padding: 20px;
   font-size: 20px;
 }
-
-.right-side {
-  margin-right: 200px;
+.nav-wrapper {
+  display: flex;
 }
 
-.left-side {
-  margin-left: 200px;
+.nav-java {
+  margin-right: 10px;
+}
+
+.nav-home {
+  margin-left: 150px;
+  padding: 10px;
 }
 
 a {
   text-decoration: none;
   color: black;
   text-align: center;
-  padding: 0;
+  padding: 15px;
+}
+
+.navbar {
+  margin-top: 16px;
 }
 
 a:hover {
