@@ -39,3 +39,25 @@ a:hover {
   border-radius: 4px;
   color: #00b7ff;
 }
+
+/* .product-images {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+} */
+
+.product-images > img:hover {
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #00b7ff;
+}
+
+.product-images-cold {
+  height: 70px;
+  width: 50px;
+}
+
+.product-images-food {
+  height: 55px;
+  width: 60px;
+}
