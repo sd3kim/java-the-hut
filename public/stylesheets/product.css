@@ -1,0 +1,28 @@
+.nav-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.right-side {
+  margin-right: 200px;
+}
+
+.left-side {
+  margin-left: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 0;
+}
+
+a:hover {
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #00b7ff;
+}
