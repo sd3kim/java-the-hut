@@ -40,10 +40,43 @@ a:hover {
   color: #00b7ff;
 }
 
-.product-img {
-  height: 250px;
-  width: 250px;
+.product-img > img {
+  height: 270px;
+  width: 270px;
   margin-top: 20px;
-  margin-left: 100px;
-  border: 10px solid black;
+  margin-left: 150px;
+
+  /* border: 10px solid black; */
+}
+
+.product {
+  background-color: #1f3933;
+}
+.product-wrapper {
+  display: flex;
+}
+.product-description > p {
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 100px;
+  font-weight: bold;
+  font-family: oDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+/* .size-options {
+  font-weight: bold;
+  font-size: 20px;
+}
+.sizes {
+  margin-top: 20px;
+  border: 1px solid black;
+  margin-left: 50px;
+  display: flex;
+  justify-content: ;
+} */
+
+.section {
+  display: flex;
+  justify-content: space-around;
 }
