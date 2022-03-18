@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // app.use("/javahut", javahutRouter);
 
 app.get("/home", (req, res) => {
-  res.render("main");
+  res.render("landing");
 });
 
 app.get("/product", (req, res) => {
