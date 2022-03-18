@@ -1,0 +1,12 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+}
+
+#hut {
+  width: 100px;
+  height: 100px;
+}
