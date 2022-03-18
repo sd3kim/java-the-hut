@@ -115,3 +115,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
+.cup-buttons > button {
+  border: none;
+  background-color: #8baf81;
+}
