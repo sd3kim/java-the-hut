@@ -1,3 +1,6 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
 nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -11,6 +14,7 @@ nav {
 
 .nav-java {
   margin-right: 10px;
+  font-family: "Press Start 2P", cursive;
 }
 
 .nav-home {
@@ -36,8 +40,9 @@ a:hover {
 }
 
 .product-img {
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   margin-top: 20px;
-  margin-left: 200px;
+  margin-left: 100px;
+  border: 10px solid black;
 }
