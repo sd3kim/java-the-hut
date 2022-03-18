@@ -47,3 +47,9 @@ a:hover {
 .product-header {
   font-family: "Press Start 2P", cursive;
 }
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(5 1fr);
+  grid-template-rows: repeat(2 1fr);
+}

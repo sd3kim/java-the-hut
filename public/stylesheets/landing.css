@@ -3,7 +3,8 @@ body {
   background-color: #8baf81;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Press Start 2P", cursive;
   text-align: center;
   margin-top: 100px;
