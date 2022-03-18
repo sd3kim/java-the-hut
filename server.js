@@ -27,6 +27,10 @@ app.get("/home", (req, res) => {
   res.render("landing");
 });
 
+app.get("/menu", (req, res) => {
+  res.render("javahut/menu");
+});
+
 app.get("/product", (req, res) => {
   res.render("javahut/product");
 });
