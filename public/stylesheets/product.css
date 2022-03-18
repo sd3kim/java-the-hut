@@ -1,7 +1,9 @@
 body {
   font-family: "Quicksand", sans-serif;
   background-color: #8baf81;
+  margin-bottom: 100px;
 }
+
 nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -9,6 +11,7 @@ nav {
   padding: 20px;
   font-size: 20px;
 }
+
 .nav-wrapper {
   display: flex;
 }
@@ -45,16 +48,16 @@ a:hover {
   width: 270px;
   margin-top: 20px;
   margin-left: 150px;
-
-  /* border: 10px solid black; */
 }
 
 .product {
   background-color: #1f3933;
 }
+
 .product-wrapper {
   display: flex;
 }
+
 .product-description > p {
   color: white;
   font-size: 2.4rem;
@@ -64,17 +67,12 @@ a:hover {
   font-weight: bold;
   font-family: oDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
 .size-options {
   font-weight: bold;
   font-size: 30px;
   margin: 40px 0;
 }
-/* .sizes {
-  border: 1px solid black;
-  margin-left: 50px;
-  display: flex;
-  justify-content: ;
-} */
 
 .section {
   display: flex;
@@ -89,6 +87,7 @@ a:hover {
   gap: 20px;
   margin: 20px;
 }
+
 .customizations {
   margin-top: 10px;
   border: 1px solid white;
@@ -96,26 +95,47 @@ a:hover {
   border-radius: 7px;
   font-weight: bold;
 }
+
 .labels > button {
   height: 22px;
   width: 22px;
   margin-left: 10px;
 }
+
 .labels > input {
   height: 18px;
   width: 18px;
   margin-left: 10px;
 }
+
 h3 {
   margin-right: 60px;
   font-family: "Times New Roman", Times, serif;
 }
+
 .labels {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .cup-buttons > button {
   border: none;
   background-color: #8baf81;
+}
+
+.cup-buttons:hover {
+  -webkit-filter: invert(100%);
+}
+
+.cart-button {
+  margin-left: 1050px;
+  margin-top: 50px;
+}
+.cart-button > button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: "Press Start 2P", cursive;
 }
