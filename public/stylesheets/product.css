@@ -34,3 +34,10 @@ a:hover {
   border-radius: 4px;
   color: #00b7ff;
 }
+
+.product-img {
+  height: 150px;
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 200px;
+}
