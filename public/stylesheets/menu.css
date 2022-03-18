@@ -2,9 +2,6 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-.nav-java {
-  font-family: "Press Start 2P", cursive;
-}
 nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -18,6 +15,7 @@ nav {
 
 .nav-java {
   margin-right: 10px;
+  font-family: "Press Start 2P", cursive;
 }
 
 .nav-home {
