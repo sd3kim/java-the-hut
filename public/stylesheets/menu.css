@@ -37,7 +37,7 @@ a {
 
 a:hover {
   border-radius: 4px;
-  color: #00b7ff;
+  color: red;
 }
 
 .product-images:hover {
