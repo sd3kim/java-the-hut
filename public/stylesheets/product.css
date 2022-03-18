@@ -64,12 +64,12 @@ a:hover {
   font-weight: bold;
   font-family: oDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-/* .size-options {
+.size-options {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
+  margin: 40px 0;
 }
-.sizes {
-  margin-top: 20px;
+/* .sizes {
   border: 1px solid black;
   margin-left: 50px;
   display: flex;
@@ -79,4 +79,39 @@ a:hover {
 .section {
   display: flex;
   justify-content: space-around;
+}
+
+.cup-sizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+.customizations {
+  margin-top: 10px;
+  border: 1px solid white;
+  padding: 10px 80px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+.labels > button {
+  height: 22px;
+  width: 22px;
+  margin-left: 10px;
+}
+.labels > input {
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
+}
+h3 {
+  margin-right: 60px;
+  font-family: "Times New Roman", Times, serif;
+}
+.labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
