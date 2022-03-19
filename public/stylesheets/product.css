@@ -173,6 +173,7 @@ h3 {
 
 .cup-buttons:hover {
   -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 .cart-button > button {
