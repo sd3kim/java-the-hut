@@ -1,6 +1,6 @@
 body {
   font-family: "Quicksand", sans-serif;
-  background-color: white;
+  background-color: #8baf81;
   margin-bottom: 100px;
 }
 nav {
@@ -42,9 +42,8 @@ a {
 }
 
 a:hover {
-  border: 1px solid black;
   border-radius: 4px;
-  color: #00b7ff;
+  color: white;
 }
 
 .product-img > img {
