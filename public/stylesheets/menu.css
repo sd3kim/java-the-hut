@@ -53,3 +53,13 @@ a:hover {
   grid-template-columns: repeat(5 1fr);
   grid-template-rows: repeat(2 1fr);
 }
+
+.drink-images-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.food-images-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
