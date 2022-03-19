@@ -71,6 +71,11 @@ a:hover {
 .products {
   margin-left: 20px;
 }
-.menu-img {
-  opacity: 60%;
+@media only screen and (max-width: 600px) {
+  .menu-image > img {
+    width: 100%;
+  }
+  .product-images {
+    width: 80%;
+  }
 }
