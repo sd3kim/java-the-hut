@@ -1,6 +1,6 @@
 body {
   font-family: "Quicksand", sans-serif;
-  background-color: #8baf81;
+  background-color: white;
   margin-bottom: 100px;
 }
 
@@ -146,11 +146,11 @@ h3 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.2;
-  overflow: hidden;
   padding: 18px 2.4rem;
-  position: relative;
-  transition-duration: 0.2s;
-  transition-property: transform, box-shadow, width, height;
-  transition-timing-function: ease;
-  z-index: 1;
 }
+/* @media only screen and (max-width: 600px) {
+  .cup-sizes {
+    height: 50px;
+    width: 50px;
+  }
+} */
