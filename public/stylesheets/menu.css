@@ -58,7 +58,11 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
-
+.food-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
 .food-images-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -66,4 +70,7 @@ a:hover {
 }
 .products {
   margin-left: 20px;
+}
+.menu-img {
+  opacity: 60%;
 }
