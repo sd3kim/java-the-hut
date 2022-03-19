@@ -39,3 +39,34 @@ a:hover {
   border-radius: 4px;
   color: white;
 }
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.product-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: space-evenly; */
+  gap: 290px;
+  margin-left: 250px;
+  margin-top: 50px;
+  padding: 20px;
+  border: 2px solid black;
+  width: 900px;
+}
+
+.product-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 290px;
+  margin-left: 250px;
+  padding: 20px;
+  width: 900px;
+  border: 1px solid black;
+}
+.quantity-buttons > input {
+  width: 20px;
+  border: 1px solid black;
+}
