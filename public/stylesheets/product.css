@@ -26,6 +26,11 @@ nav {
   padding: 10px;
 }
 
+.back-link > a {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -90,11 +95,10 @@ a:hover {
 
 .customizations {
   margin-top: 10px;
-  /* border: 1px solid white; */
   padding: 10px 80px;
   border-radius: 7px;
   font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(81, 134, 81);
 }
 
 .labels > button {
@@ -104,8 +108,8 @@ a:hover {
 }
 
 .labels > input {
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
   margin-left: 10px;
 }
 
@@ -118,7 +122,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .cup-buttons > button {
@@ -131,13 +134,23 @@ h3 {
 }
 
 .cart-button {
-  margin-left: 1000px;
+  margin-left: 1050px;
   margin-top: 50px;
 }
 .cart-button > button {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: "Press Start 2P", cursive;
+  background-color: #00a862;
+  border-radius: 500px;
+  box-shadow: 0 0 6px rgb(0 0 0 / 24%), 0 8px 12px rgb(0 0 0 / 14%);
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow: hidden;
+  padding: 18px 2.4rem;
+  position: relative;
+  transition-duration: 0.2s;
+  transition-property: transform, box-shadow, width, height;
+  transition-timing-function: ease;
+  z-index: 1;
 }
