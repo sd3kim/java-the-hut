@@ -1,0 +1,41 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #8baf81;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 20px;
+}
+.nav-wrapper {
+  display: flex;
+}
+
+.nav-java {
+  margin-right: 10px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.nav-home {
+  margin-left: 150px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar {
+  margin-top: 16px;
+}
+
+a:hover {
+  border-radius: 4px;
+  color: white;
+}

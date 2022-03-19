@@ -35,6 +35,10 @@ app.get("/product", (req, res) => {
   res.render("javahut/product");
 });
 
+app.get("/cart", (req, res) => {
+  res.render("javahut/cart");
+});
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
