@@ -48,13 +48,14 @@ h1 {
 .product-column {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* justify-content: space-evenly; */
   gap: 290px;
   margin-left: 250px;
   margin-top: 50px;
-  padding: 20px;
+  padding: 10px;
   border: 2px solid black;
   width: 900px;
+  background-color: darkgreen;
+  color: white;
 }
 
 .product-items {
@@ -62,11 +63,21 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 290px;
   margin-left: 250px;
-  padding: 20px;
+  padding: 10px;
   width: 900px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 .quantity-buttons > input {
   width: 20px;
   border: 1px solid black;
+}
+#checkout {
+  margin-left: 670px;
+  margin-top: 150px;
+}
+.remove > button {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 6px;
 }
