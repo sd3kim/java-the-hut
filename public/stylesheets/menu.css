@@ -53,28 +53,34 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 100px;
 }
+
 .drink-images-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
+
 .food-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 100px;
 }
+
 .food-images-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
+
 .products {
   margin-left: 20px;
 }
+
 @media only screen and (max-width: 600px) {
   .menu-image > img {
     width: 100%;
   }
+
   .product-images {
     width: 80%;
   }
