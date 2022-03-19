@@ -41,25 +41,41 @@ a:hover {
 }
 
 .product-images:hover {
-  -webkit-filter: invert(100%);
+  /* -webkit-filter: invert(100%); */
+  color: white;
 }
 
 .product-header {
   font-family: "Press Start 2P", cursive;
 }
 
-.products {
+/* .products {
   display: grid;
-  grid-template-columns: repeat(5 1fr);
-  grid-template-rows: repeat(2 1fr);
-}
+  grid-template-columns: 1fr 1fr;
+} */
 
+/* .drink-images-wrapper {
+  grid-column: 1/2;
+} */
+
+/* .menu-image {
+  grid-column: 2/3;
+} */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
 .drink-images-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .food-images-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.products {
+  margin-left: 20px;
 }

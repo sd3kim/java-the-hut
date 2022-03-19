@@ -44,7 +44,7 @@
     </div>
     <div class="section">
       <div class="sizes">
-        <div class="size-options">Size Options</div>
+        <div class="size-options">Size?</div>
         <div class="cup-sizes">
           <div class="cup-buttons">
             <img src="/images/small.png" height="70px" width="70" /><br />
@@ -61,28 +61,44 @@
         </div>
       </div>
       <div class="customizations">
-        <h2>Customizations</h2>
+        <h2>How would you like it?</h2>
         <div class="labels">
-          <h3>Cream</h3>
-          <button>-</button>
-          <input type="text" id="cram" name="cream" value="0" />
-          <button>+</button>
+          <div class="customization-header">
+            <h3>Cream</h3>
+          </div>
+          <div class="customization-button">
+            <button>-</button>
+            <input type="text" id="cream" name="cream" value="0" />
+            <button>+</button>
+          </div>
         </div>
         <div class="labels">
-          <h3>Milk</h3>
-          <button>-</button>
-          <input type="text" id="milk" name="milk" value="0" />
-          <button>+</button>
+          <div class="customization-header">
+            <h3>Milk</h3>
+          </div>
+          <div class="customization-button">
+            <button>-</button>
+            <input type="text" id="milk" name="milk" value="0" />
+            <button>+</button>
+          </div>
         </div>
         <div class="labels">
-          <h3>Sugar</h3>
-          <button>-</button>
-          <input type="text" id="sugar" name="sugar" value="0" />
-          <button>+</button>
+          <div class="customization-header">
+            <h3>Sugar</h3>
+          </div>
+          <div class="customization-button">
+            <button>-</button>
+            <input type="text" id="sugar" name="sugar" value="0" />
+            <button>+</button>
+          </div>
         </div>
         <div class="labels">
-          <h3>Black</h3>
-          <input type="checkbox" />
+          <div class="customization-header">
+            <h3>Black</h3>
+          </div>
+          <div class="customization-button" id="customization-checkbox">
+            <input type="checkbox" />
+          </div>
         </div>
       </div>
     </div>
