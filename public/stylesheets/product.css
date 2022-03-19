@@ -101,7 +101,7 @@ a:hover {
 
 .section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .cup-sizes {
@@ -197,6 +197,14 @@ h3 {
     height: 100%;
   }
 
+  .product-description > p {
+    margin: 0;
+    padding-top: 90px;
+    text-align: center;
+  }
+  .product-img > img {
+    margin: 0;
+  }
   .section {
     gap: 40px;
   }
