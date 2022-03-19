@@ -8,8 +8,9 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .nav-wrapper {
@@ -72,10 +73,19 @@ a:hover {
   font-family: oDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+.sizes {
+  /* background-color: #1f3933; */
+  margin-top: 10px;
+  padding: 10px 80px;
+  border-radius: 7px;
+  opacity: 90%;
+}
+
 .size-options {
   font-weight: bold;
   font-size: 30px;
   margin: 40px 0;
+  border-bottom: 5px solid white;
 }
 
 .section {
@@ -97,7 +107,9 @@ a:hover {
   padding: 10px 80px;
   border-radius: 7px;
   font-weight: bold;
-  background-color: rgb(81, 134, 81);
+  /* background-color: rgb(81, 134, 81); */
+  /* background-color: #1f3933;
+  opacity: 90%; */
 }
 
 .labels > button {
@@ -112,9 +124,14 @@ a:hover {
   margin-left: 10px;
 }
 
+h2 {
+  border-bottom: 5px solid white;
+  font-family: "Quicksand", sans-serif;
+}
+
 h3 {
   margin-right: 60px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .labels {
@@ -125,7 +142,7 @@ h3 {
 
 .cup-buttons > button {
   border: none;
-  background-color: #8baf81;
+  background-color: transparent;
 }
 
 .cup-buttons:hover {
@@ -143,6 +160,7 @@ h3 {
   color: #fff;
   display: inline-block;
   font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   padding: 18px 2.4rem;
