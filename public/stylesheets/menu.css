@@ -41,7 +41,8 @@ a:hover {
 }
 
 .product-images:hover {
-  -webkit-filter: invert(100%);
+  /* -webkit-filter: invert(100%); */
+  color: white;
 }
 
 .product-header {
