@@ -1,6 +1,10 @@
 body {
   font-family: "Quicksand", sans-serif;
   background-color: #8baf81;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
