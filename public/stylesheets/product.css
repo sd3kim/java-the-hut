@@ -118,7 +118,7 @@ a:hover {
   padding: 10px 80px;
   border-radius: 7px;
   font-weight: bold;
-  min-width: 144px;
+  min-width: 154px;
   /* background-color: rgb(81, 134, 81); */
   /* background-color: #1f3933;
   opacity: 90%; */
@@ -229,6 +229,9 @@ h3 {
   }
 
   .cart-button > button {
-    margin-left: 400px;
+    margin-left: 300px;
+  }
+  .back-link > a {
+    margin-left: 350px;
   }
 }
