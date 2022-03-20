@@ -31,6 +31,7 @@ nav {
 .back-link > a {
   font-size: 1rem;
   font-weight: bold;
+  margin-left: 43rem;
 }
 
 a {
@@ -138,6 +139,16 @@ a:hover {
   row-gap: 10px;
 }
 
+.customization-button > button {
+  width: 25px;
+  height: 20px;
+}
+
+#customization-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
 .labels > button {
   height: 22px;
   width: 22px;
@@ -187,7 +198,8 @@ h3 {
   font-weight: 700;
   line-height: 1.2;
   padding: 18px 2.4rem;
-  margin-left: 60rem;
+  margin-left: 40rem;
+  margin-bottom: 1rem;
   margin-top: 50px;
   position: relative;
 }

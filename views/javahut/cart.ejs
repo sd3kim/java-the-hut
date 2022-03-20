@@ -31,22 +31,28 @@
       </nav>
     </header>
     <h1>Shopping Cart</h1>
-    <div class="product-column">
-      <div><h3>Product</h3></div>
-      <div><h3>Quantity</h3></div>
-      <div><h3>Keep</h3></div>
-    </div>
-    <div class="product-items">
-      <div>House Coffee</div>
-      <div class="quantity-buttons">
-        <button>-</button>
-        <input type="text" value="0" />
-        <button>+</button>
-      </div>
-      <div class="remove">
-        <button>Remove</button>
+    <div class="product-column-wrapper">
+      <div class="product-column">
+        <div><h3>Product</h3></div>
+        <div><h3>Quantity</h3></div>
+        <div><h3>Keep</h3></div>
       </div>
     </div>
-    <button id="checkout">Order</button>
+    <div class="product-items-wrapper">
+      <div class="product-items">
+        <div class="product-text">House Coffee</div>
+        <div class="quantity-buttons">
+          <button class="customization-button">-</button>
+          <input type="text" value="0" />
+          <button class="customization-button">+</button>
+        </div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+    </div>
+    <div id="checkout-button">
+      <button id="checkout">Order</button>
+    </div>
   </body>
 </html>
