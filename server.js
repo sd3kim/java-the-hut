@@ -5,8 +5,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
-// var javahutRouter = require("./routes/javahut");
-const { application } = require("express");
+var javahutRouter = require("./routes/javahut");
 
 var app = express();
 
@@ -19,25 +18,22 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use("/", javahutRouter);
 
 // app.use("/", indexRouter);
 // app.use("/javahut", javahutRouter);
 
-app.get("/home", (req, res) => {
-  res.render("landing");
-});
+// app.get("/menu", (req, res) => {
+//   res.render("javahut/menu");
+// });
 
-app.get("/menu", (req, res) => {
-  res.render("javahut/menu");
-});
+// app.get("/product", (req, res) => {
+//   res.render("javahut/product");
+// });
 
-app.get("/product", (req, res) => {
-  res.render("javahut/product");
-});
-
-app.get("/cart", (req, res) => {
-  res.render("javahut/cart");
-});
+// app.get("/cart", (req, res) => {
+//   res.render("javahut/cart");
+// });
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
