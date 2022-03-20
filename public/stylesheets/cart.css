@@ -10,6 +10,7 @@ nav {
   padding: 20px;
   font-size: 20px;
 }
+
 .nav-wrapper {
   display: flex;
 }
@@ -39,6 +40,7 @@ a:hover {
   border-radius: 4px;
   color: white;
 }
+
 h1 {
   text-align: center;
   font-weight: bold;
@@ -67,14 +69,23 @@ h1 {
   width: 900px;
   border: 2px solid black;
 }
+
 .quantity-buttons > input {
   width: 20px;
   border: 1px solid black;
 }
+
 #checkout {
-  margin-left: 670px;
+  width: 150px;
+  height: 60px;
+  margin-left: 650px;
   margin-top: 150px;
+  font-size: 20px;
+  color: darkgreen;
+  border-radius: 10px;
+  font-weight: bold;
 }
+
 .remove > button {
   border-radius: 5px;
   background-color: black;
