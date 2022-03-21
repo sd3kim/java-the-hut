@@ -23,6 +23,10 @@ app.use("/", javahutRouter);
 // app.use("/", indexRouter);
 // app.use("/javahut", javahutRouter);
 
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
 // app.get("/menu", (req, res) => {
 //   res.render("javahut/menu");
 // });
