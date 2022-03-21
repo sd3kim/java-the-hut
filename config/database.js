@@ -5,10 +5,10 @@ const { Pool } = require("pg");
 
 //create a new Pool connection with our credentials
 const pool = new Pool({
-  user: "sarahkim",
-  host: "localhost",
-  database: "javahut",
-  password: "0253",
+  user: process.env.DB_USERNAME,
+  host: process.env.DB_HOST,
+  database: process.env.DB_DATABASE,
+  password: process.env.DB_PASSWORD,
   port: 5432,
 });
 
