@@ -1,6 +1,6 @@
 const { urlencoded } = require("express");
 
-const javahut = [
+const foods = [
   {
     id: 1,
     name: "House Coffee",
@@ -112,14 +112,14 @@ const javahut = [
 ];
 
 function getAll() {
-  return javahut;
+  return foods;
 }
 
 function getOne(id) {
-  const product = javahut.find((i) => i.id === parseInt(id));
+  const product = foods.find((i) => i.id === parseInt(id));
   return product;
 }
-exports.module = {
+module.exports = {
   getAll,
   getOne,
 };
