@@ -4,24 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/landing.css" />
+    <link rel="stylesheet" href="/stylesheets/menu.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    /> -->
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-
-    <title>Home Page</title>
+    <title>Java the Hut</title>
   </head>
   <body>
-    <h1>Java the Hut - Coffee Shop</h1>
-    <h2>Can we take your order?</h2>
-    <a href="/menu"><img src="/images/hut.png" id="hut" /></a>
-    <p>Click the Hut above to enter</p>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <img
+            class="nav-java"
+            src="/images/logo-java.png"
+            height="60px"
+            width="70px"
+          />
+          <a class="nav-java" href="/home">Java the Hut</a>
+        </div>
+        <div class="navbar">
+          <a class="nav-home" href="/menu">Menu</a>
+          <a class="nav-home" href="/cart">Cart</a>
+          <a class="nav-home" href="/signin">Sign in</a>
+        </div>
+      </nav>
+    </header>
+    <div class="products">
+      <div class="product-header">
+        <h2>Drinks</h2>
+      </div>
+
+      <div class="wrapper">
+        <% drinks.forEach(function(drink){%>
+        <div class="drink-images-wrapper">
+          <div class="product-images">
+            <a href="/drink_products/<%= drink.id %>">
+              <img
+                src="/images/<%= drink.image %>"
+                height="65px"
+                width="50px"
+              />
+              <%= drink.name %>
+            </a>
+          </div>
+        </div>
+        <%})%>
+        <!-- <div class="menu-image">
+          <img src="/images/coffee-menu.jpg" />
+        </div> -->
+      </div>
+
+      <div class="product-header">
+        <h2>Food</h2>
+      </div>
+
+      <div class="food-wrapper">
+        <% food.forEach(function(food){%>
+        <div class="food-images-wrapper">
+          <div class="product-images">
+            <a href="/food_products/<%= food.id %>">
+              <img src="/images/<%= food.image %>" height="65px" width="50px" />
+              <%= food.name %>
+            </a>
+          </div>
+        </div>
+        <%})%>
+      </div>
+    </div>
   </body>
 </html>
