@@ -50,7 +50,6 @@
           </div>
         </div>
         <%})%>
-      </div>
         <!-- <div class="menu-image">
           <img src="/images/coffee-menu.jpg" />
         </div> -->
@@ -64,18 +63,13 @@
         <% food.forEach(function(food){%>
         <div class="food-images-wrapper">
           <div class="product-images">
-            <a href="/menu">
-              <img
-                src="/images/<%=food.image%>"
-                height="55px"
-                width="70px"
-              /><%=food.name%>
+            <a href="/food_products/<%= food.id %>">
+              <img src="/images/<%= food.image %>" height="65px" width="50px" />
+              <%= food.name %>
             </a>
           </div>
-          </div>
-          <%})%>
-          </div> 
         </div>
+        <%})%>
       </div>
     </div>
   </body>

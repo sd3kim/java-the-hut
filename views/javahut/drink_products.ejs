@@ -33,9 +33,7 @@
     <div class="product">
       <div class="product-wrapper">
         <div class="product-img">
-          <img
-            src="https://globalassets.starbucks.com/assets/041502ea2476446ba1118a7fe18d4dcb.jpg?impolicy=1by1_wide_topcrop_630"
-          />
+          <img src="<%= drinks.product_image%>" />
         </div>
         <div class="product-description">
           <p><%= drinks.name %></p>
@@ -72,9 +70,15 @@
             <h3>Cream</h3>
           </div>
           <div class="customization-button">
-            <button>-</button>
-            <input type="text" id="cream" name="cream" value="0" />
-            <button>+</button>
+            <button class="sub">-</button>
+            <input
+              type="number"
+              class="input"
+              id="cream"
+              name="cream"
+              value="0"
+            />
+            <button class="add">+</button>
           </div>
         </div>
         <div class="labels">
@@ -82,9 +86,15 @@
             <h3>Milk</h3>
           </div>
           <div class="customization-button">
-            <button class="customization-button-text">-</button>
-            <input type="text" id="milk" name="milk" value="0" />
-            <button class="customization-button-text">+</button>
+            <button class="customization-button-text sub">-</button>
+            <input
+              type="number"
+              class="input"
+              id="milk"
+              name="milk"
+              value="0"
+            />
+            <button class="customization-button-text add">+</button>
           </div>
         </div>
         <div class="labels">
@@ -92,9 +102,15 @@
             <h3>Sugar</h3>
           </div>
           <div class="customization-button">
-            <button>-</button>
-            <input type="text" id="sugar" name="sugar" value="0" />
-            <button>+</button>
+            <button class="sub">-</button>
+            <input
+              type="number"
+              class="input"
+              id="sugar"
+              name="sugar"
+              value="0"
+            />
+            <button class="add">+</button>
           </div>
         </div>
         <div class="labels">
