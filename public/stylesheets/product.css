@@ -176,7 +176,7 @@ h3 {
   align-items: center;
 }
 
-.cup-buttons > button {
+.cup-buttons > input {
   border: none;
   background-color: transparent;
   font-size: 20px;

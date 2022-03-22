@@ -33,12 +33,10 @@
     <div class="product">
       <div class="product-wrapper">
         <div class="product-img">
-          <img
-            src="https://globalassets.starbucks.com/assets/041502ea2476446ba1118a7fe18d4dcb.jpg?impolicy=1by1_wide_topcrop_630"
-          />
+          <img src="<%=product.img%>" />
         </div>
         <div class="product-description">
-          <p>the java coffee</p>
+          <p><%=product.description%></p>
         </div>
       </div>
     </div>
@@ -48,15 +46,15 @@
         <div class="cup-sizes">
           <div class="cup-buttons">
             <img src="/images/small.png" height="70px" width="70" /><br />
-            <button>Small</button>
+            <input type="button" value="Small"></input>
           </div>
           <div class="cup-buttons">
             <img src="/images/medium.png" height="80px" width="80" /><br />
-            <button>Medium</button>
+            <input type="button" value="Medium"></input>
           </div>
           <div class="cup-buttons">
             <img src="/images/large.png" height="85px" width="85" /><br />
-            <button>Large</button>
+            <input type="button" value="Large"></input>
           </div>
         </div>
       </div>
@@ -67,9 +65,9 @@
             <h3>Cream</h3>
           </div>
           <div class="customization-button">
-            <button>-</button>
-            <input type="text" id="cream" name="cream" value="0" />
-            <button>+</button>
+            <button class="sub">-</button>
+            <input type="text" class="input" name="cream" value="0" />
+            <button class="add">+</button>
           </div>
         </div>
         <div class="labels">
@@ -110,3 +108,21 @@
     </div>
   </body>
 </html>
+<script type="text/javascript">
+  const add = document.querySelector("add");
+const sub = document.querySelector("sub");
+const input = document.querySelector("input");
+let total;
+
+function adding(){
+  inputVal=input.valueAsNumber;
+  total = inputVal ++;
+  input.textContent = total;
+}
+
+add.addEventListener("click", adding);
+
+sub.addEventListener("click", function(){
+  input.valueAsNumber --;
+})
+</script>

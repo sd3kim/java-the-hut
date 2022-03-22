@@ -2,19 +2,21 @@ var express = require("express");
 var router = express.Router();
 const javahutCtrl = require("../controllers/javahut");
 
-const db = require("../config/database");
+router.get("/menu", javahutCtrl.index);
+router.get("/:id", javahutCtrl.show);
+
+// router.get("/menu", javahutCtrl.menu);
+// const db = require("../config/database");
 
 // router.get("/home", (req, res) => {
 //   res.render("landing");
 // });
 
-router.get("/home", javahutCtrl.home);
+// router.get("/home", javahutCtrl.index);
 
 // router.get("/menu", (req, res) => {
 //   res.render("javahut/menu.ejs");
 // });
-
-router.get("/menu", javahutCtrl.menu);
 
 // router.get("/product", async (req, res) => {
 //   // const test = await db.query("SELECT * FROM drinks");
@@ -22,12 +24,12 @@ router.get("/menu", javahutCtrl.menu);
 //   res.render("javahut/product");
 // });
 
-router.get("/product", javahutCtrl.product);
+// router.get("/product", javahutCtrl.product);
 
 // router.get("/cart", (req, res) => {
 //   res.render("javahut/cart");
 // });
 
-router.get("/cart", javahutCtrl.cart);
+// router.get("/cart", javahutCtrl.cart);
 
 module.exports = router;

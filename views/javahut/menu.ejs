@@ -36,51 +36,17 @@
       </div>
       <div class="wrapper">
         <div class="drink-images-wrapper">
+          <% products.forEach(function(product){%>
           <div class="product-images">
-            <a href="/product">
-              <img src="/images/coffee.png" height="50px" width="50px" />House
-              Coffee
+            <a href="/javahut/<%=product.id%>">
+              <img src="/images/coffee.png" height="50px" width="50px" /><%=
+              product.name %>
             </a>
           </div>
-
-          <div class="product-images">
-            <a href="/menu">
-              <img src="/images/espresso.png" height="50px" width="50px" />
-              Espresso
-            </a>
-          </div>
-
-          <div class="product-images">
-            <a href="/menu">
-              <img src="/images/latte.png" height="50px" width="50px" />
-              Latte
-            </a>
-          </div>
-
-          <div class="product-images">
-            <a href="/menu">
-              <img src="/images/iced.png" height="70px" width="50px" />
-              Iced Coffee
-            </a>
-          </div>
-
-          <div class="product-images">
-            <a href="/menu">
-              <img src="/images/iced-latte.png" height="70px" width="50px" />
-              Iced Latte</a
-            >
-          </div>
-          <div class="product-images">
-            <a href="/menu">
-              <img src="/images/iced-latte.png" height="70px" width="50px" />
-              Iced Latte
-            </a>
-          </div>
+          <%})%>
         </div>
-
         <div class="menu-image">
           <img src="/images/coffee-menu.jpg" />
-          <!-- height="400px" width="650px"  -->
         </div>
       </div>
 
@@ -89,14 +55,18 @@
       </div>
       <div class="food-wrapper">
         <div class="food-images-wrapper">
+          <% foods.forEach(function(item){%>
           <div class="product-images">
             <a href="/menu">
-              <img src="/images/cookie.png" height="55px" width="70px" />
-              Chocolate Chunk Cookie
+              <img
+                src="/images/cookie.png"
+                height="55px"
+                width="70px"
+              /><%=item.name%>
             </a>
           </div>
-
-          <div class="product-images">
+          <%})%>
+          <!-- <div class="product-images">
             <a href="/menu">
               <img
                 src="/images/brownie.png"
@@ -139,7 +109,7 @@
               />
               Butter Croissant
             </a>
-          </div>
+          </div> -->
         </div>
         <div class="menu-image">
           <img src="/images/food-menu.jpg" />
