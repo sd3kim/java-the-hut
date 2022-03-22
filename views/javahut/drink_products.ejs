@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500"
       rel="stylesheet"
     />
+    <script defer src="/javascripts/drink.js" type="text/javascript" >
+    </script>
     <title>Document</title>
   </head>
   <body>
@@ -33,11 +35,11 @@
     <div class="product">
       <div class="product-wrapper">
         <div class="product-img">
-          <img src="<%=product.img%>" />
+          <img src="<%=drinks.img%>" />
         </div>
         <div class="product-description">
 
-          <p><%=product.description%></p>
+       
           <p><%= drinks.name %></p>
         </div>
       </div>
@@ -68,8 +70,8 @@
           </div>
           <div class="customization-button">
             <button class="sub">-</button>
-            <input type="text" class="input" name="cream" value="0" />
-            <button class="add">+</button>
+            <input type="number" class="input" name="cream" value="0" />
+            <button id="ad">+</button>
           </div>
         </div>
         <div class="labels">
@@ -110,24 +112,3 @@
     </div>
   </body>
 </html>
-<script type="text/javascript">
-  const add = document.querySelector(".add");
-const sub = document.querySelector(".sub");
-const input = document.querySelector(".input");
-let total, inputVal;
-
-function adding(){
-  inputVal =input.value;
-  total = inputVal ++;
-  console.log(total);
-  input.textContent = total;
-}
-
-add.addEventListener("click", adding);
-
-sub.addEventListener("click", function(){
-  total = input.valueAsNumber --;
-  input.textContent = total;
-
-})
-</script>

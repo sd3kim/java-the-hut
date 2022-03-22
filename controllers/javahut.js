@@ -23,7 +23,7 @@ async function index(req, res, next) {
 async function index(req, res, next) {
   try {
     const drinks = await db.query("SELECT * FROM drinks");
-    const food = await db.query("SELECT * FROM food");
+    const food = await db.query("SELECT * FROM foods");
     res.render("javahut/menu", { drinks: drinks.rows, food: food.rows });
   } catch (err) {
     next(err);

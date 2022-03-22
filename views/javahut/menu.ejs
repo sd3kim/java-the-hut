@@ -38,34 +38,22 @@
       <div class="wrapper">
         <% drinks.forEach(function(drink){%>
         <div class="drink-images-wrapper">
-          <% products.forEach(function(product){%>
           <div class="product-images">
-
-            <a href="/javahut/<%=product.id%>">
-              <img src="/images/coffee.png" height="50px" width="50px" /><%=
-              product.name %>
-
             <a href="/drink_products/<%= drink.id %>">
               <img
-                src="/images/<%= drink.image %>"
+                src="/images/<%= drink.img %>"
                 height="65px"
                 width="50px"
               />
               <%= drink.name %>
             </a>
           </div>
-          <%})%>
         </div>
-
-        <div class="menu-image">
-          <img src="/images/coffee-menu.jpg" />
-        </div>
-
         <%})%>
+      </div>
         <!-- <div class="menu-image">
           <img src="/images/coffee-menu.jpg" />
         </div> -->
-
       </div>
 
       <div class="product-header">
@@ -75,69 +63,19 @@
       <div class="food-wrapper">
         <% food.forEach(function(food){%>
         <div class="food-images-wrapper">
-          <% foods.forEach(function(item){%>
           <div class="product-images">
-
             <a href="/menu">
               <img
-                src="/images/cookie.png"
+                src="/images/<%=food.img%>"
                 height="55px"
                 width="70px"
-              /><%=item.name%>
+              /><%=food.name%>
             </a>
+          </div>
           </div>
           <%})%>
-          <!-- <div class="product-images">
-            <a href="/menu">
-              <img
-                src="/images/brownie.png"
-                class="product-images-food"
-                height="50px"
-                width="60px"
-              />
-              Chocolate Brownie
-            </a>
-          </div>
-
-          <div class="product-images">
-            <a href="/menu">
-              <img src="/images/danish.png" height="60px" width="55px" />
-              Cheese Danish
-            </a>
-          </div>
-
-          <div class="product-images">
-            <a href="/menu">
-              <img src="/images/loaf.png" height="55px" width="55px" />
-              Banana Loaf
-            </a>
-          </div>
-
-          <div class="product-images">
-            <a href="/menu">
-              <img src="/images/muffin.png" height="60px" width="55px" />
-              Blueberry Muffin
-            </a>
-          </div>
-
-          <div class="product-images">
-            <a href="/menu">
-              <img
-                src="/images/croissant.png"
-                class="product-images-food"
-                height="50px"
-                width="55px"
-              />
-              Butter Croissant
-=======
-            <a href="/food_products/<%= food.id %>">
-              <img src="/images/<%= food.image %>" height="65px" width="50px" />
-              <%= food.name %>
->>>>>>> a0fc5070de2909b6b2e803e59200cc1fabdcf7ee
-            </a>
-          </div> -->
+          </div> 
         </div>
-        <%})%>
       </div>
     </div>
   </body>
