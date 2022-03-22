@@ -3,7 +3,7 @@ var router = express.Router();
 const javahutCtrl = require("../controllers/javahut");
 
 router.get("/menu", javahutCtrl.index);
-router.get("/:id", javahutCtrl.show);
+// router.get("/:id", javahutCtrl.show);
 
 // router.get("/menu", javahutCtrl.menu);
 // const db = require("../config/database");
@@ -12,7 +12,7 @@ router.get("/:id", javahutCtrl.show);
 //   res.render("landing");
 // });
 
-router.get("/home", javahutCtrl.home);
+// router.get("/home", javahutCtrl.home);
 
 router.get("/menu", javahutCtrl.index);
 

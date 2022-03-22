@@ -11,33 +11,32 @@ async function index(req, res, next) {
   }
 }
 
-
-async function show(req, res, next) {
-  try {
-    const { id } = req.params;
-    const { rows } = await db.query("SELECT * FROM drinks  WHERE id =$1", [id]);
-    res.render("javahut/product", { product: rows[0] });
-  } catch (err) {
-    console.log(err);
-
+// async function show(req, res, next) {
+//   try {
+//     const { id } = req.params;
+//     const { rows } = await db.query("SELECT * FROM drinks  WHERE id =$1", [id]);
+//     res.render("javahut/product", { product: rows[0] });
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
 async function index(req, res, next) {
   try {
     const drinks = await db.query("SELECT * FROM drinks");
     const food = await db.query("SELECT * FROM food");
     res.render("javahut/menu", { drinks: drinks.rows, food: food.rows });
   } catch (err) {
-
     next(err);
   }
 }
 
-
-async function create(res, req, next) {
-  const { size } = req.body;
-  const { rows } = await db.query("INSERT INTO drinks (size) VALUES ($1)", [
-    size,
-  ]);
-  res.redirect("/cart");
+// async function create(res, req, next) {
+//   const { size } = req.body;
+//   const { rows } = await db.query("INSERT INTO drinks (size) VALUES ($1)", [
+//     size,
+//   ]);
+//   res.redirect("/cart");
+// }
 
 async function showDrink(req, res, next) {
   try {
@@ -60,7 +59,6 @@ async function showFood(req, res, next) {
     console.log(err);
     next(err);
   }
-
 }
 
 // function menu(req, res, next) {
@@ -77,11 +75,8 @@ async function showFood(req, res, next) {
 
 module.exports = {
   index,
-  show,
-  create,
+  //   show,
+  //   create,
   showDrink,
   showFood,
-  // menu,
-  // product,
-
 };
