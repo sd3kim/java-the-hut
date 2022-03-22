@@ -1,15 +1,19 @@
-const add = document.getElementById("ad");
-const sub = document.querySelector(".sub");
-const input = document.querySelector(".input");
+const add = document.querySelectorAll(".add");
+const sub = document.querySelectorAll(".sub");
+const input = document.querySelectorAll(".input");
+
 let total, inputVal;
 function adding() {
-  inputVal = input.valueAsNumber++;
-  input.textContent = inputVal;
+  input.forEach(function (evt) {
+    evt.textContent = evt.valueAsNumber++;
+  });
 }
 function substract() {
   inputVal = input.valueAsNumber--;
   input.textContent = inputVal;
 }
-ad.addEventListener("click", adding);
+add.forEach(function (evt) {
+  evt.addEventListener("click", adding);
+});
 
-sub.addEventListener("click", substract);
+// sub.addEventListener("click", substract);
