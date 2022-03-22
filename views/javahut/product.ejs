@@ -109,20 +109,23 @@
   </body>
 </html>
 <script type="text/javascript">
-  const add = document.querySelector("add");
-const sub = document.querySelector("sub");
-const input = document.querySelector("input");
-let total;
+  const add = document.querySelector(".add");
+const sub = document.querySelector(".sub");
+const input = document.querySelector(".input");
+let total, inputVal;
 
 function adding(){
-  inputVal=input.valueAsNumber;
+  inputVal =input.value;
   total = inputVal ++;
+  console.log(total);
   input.textContent = total;
 }
 
 add.addEventListener("click", adding);
 
 sub.addEventListener("click", function(){
-  input.valueAsNumber --;
+  total = input.valueAsNumber --;
+  input.textContent = total;
+
 })
 </script>
