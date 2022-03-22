@@ -54,7 +54,6 @@ module.exports = {
   index,
   showDrink,
   showFood,
-  // menu,
   // product,
   // cart,
 };
