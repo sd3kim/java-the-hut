@@ -61,10 +61,6 @@ async function showFood(req, res, next) {
   }
 }
 
-// function menu(req, res, next) {
-//   res.render("javahut/menu");
-// }
-
 // function product(req, res, next) {
 //   res.render("javahut/product");
 // }
