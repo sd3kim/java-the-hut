@@ -8,7 +8,8 @@ const javahut = [
       "https://globalassets.starbucks.com/assets/041502ea2476446ba1118a7fe18d4dcb.jpg?impolicy=1by1_wide_topcrop_630"
     ),
     price: "$4.99",
-    description: "True North Blend Blonde Roast",
+    description:
+      "True North Blend Blonde Roast Small: 1.95 Medium: 2.25 Large: 2.55",
   },
   {
     id: 2,
@@ -53,7 +54,7 @@ const javahut = [
       "https://globalassets.starbucks.com/assets/c71ba8397a184c10ab8cb54ef9545c5b.jpg?impolicy=1by1_wide_topcrop_630"
     ),
     price: "$4.99",
-    description: "ICed Caffè Mocha",
+    description: "Iced Caffè Mocha",
   },
   {
     id: 7,
