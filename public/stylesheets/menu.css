@@ -21,7 +21,7 @@ nav {
 }
 
 h2 {
-  color: white;
+  color: black;
 }
 
 .nav-wrapper {
@@ -63,7 +63,7 @@ a {
 
 a:hover {
   border-radius: 4px;
-  color: white;
+  color: rgb(169, 149, 123);
 }
 
 .product-images:hover {
@@ -81,7 +81,8 @@ a:hover {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: rgb(169, 149, 123);
+  /* background-color: rgb(169, 149, 123); */
+  background-color: white;
   opacity: 0.8;
   border-radius: 15px;
 }
@@ -101,7 +102,8 @@ a:hover {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: rgb(169, 149, 123);
+  /* background-color: rgb(169, 149, 123); */
+  background-color: white;
   opacity: 0.8;
   border-radius: 15px;
 }
