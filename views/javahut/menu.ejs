@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/menu.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500&family=Poppins:wght@400"
       rel="stylesheet"
     />
     <title>Java the Hut</title>
@@ -40,11 +40,11 @@
         <div class="drink-images-wrapper">
           <div class="product-images">
             <a href="/drink_products/<%= drink.id %>">
-              <img
+              <!-- <img
                 src="/images/<%= drink.image %>"
                 height="65px"
                 width="50px"
-              />
+              /> -->
               <%= drink.name %>
             </a>
           </div>
@@ -65,11 +65,12 @@
         <div class="food-images-wrapper">
           <div class="product-images">
             <a href="/food_products/<%= food.id %>">
-              <img
+              <!-- <img
                 src="/images/<%=food.image%>"
                 height="55px"
                 width="70px"
-              /><%=food.name%>
+              /> -->
+              <%=food.name%>
             </a>
           </div>
           </div>
