@@ -3,6 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+var methodOverride = require("method-override");
 
 require("dotenv").config();
 
@@ -16,30 +17,18 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.use(logger("dev"));
+app.use(methodOverride("_method"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", javahutRouter);
-
 // app.use("/", indexRouter);
 // app.use("/javahut", javahutRouter);
 
 app.get("/", (req, res) => {
   res.render("index");
 });
-
-// app.get("/menu", (req, res) => {
-//   res.render("javahut/menu");
-// });
-
-// app.get("/product", (req, res) => {
-//   res.render("javahut/product");
-// });
-
-// app.get("/cart", (req, res) => {
-//   res.render("javahut/cart");
-// });
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

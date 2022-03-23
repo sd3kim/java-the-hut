@@ -33,7 +33,10 @@ router.get("/food_products/:id", javahutCtrl.showFood);
 // // router.get("/cart", (req, res) => {
 // //   res.render("javahut/cart");
 // // });
+router.get("/cart", javahutCtrl.cart);
 
-// router.get("/cart", javahutCtrl.cart);
+router.post("/cart", javahutCtrl.cart);
+
+router.delete("/cart/:id", javahutCtrl.delete);
 
 module.exports = router;

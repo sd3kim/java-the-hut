@@ -81,8 +81,6 @@ h1 {
   width: 900px;
   border: 2px solid black;
   display: grid;
-  text-align: center;
-  justify-items: center;
 }
 
 .quantity-buttons > input {

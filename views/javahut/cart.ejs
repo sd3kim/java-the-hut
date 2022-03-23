@@ -8,7 +8,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500"
       rel="stylesheet"
-    />
+    /><script defer src="/javascripts/cart.js"></script>
     <title>Java the Hut - Cart</title>
   </head>
   <body>
@@ -38,17 +38,24 @@
         <div><h3>Keep</h3></div>
       </div>
     </div>
+
     <div class="product-items-wrapper">
-      <div class="product-items">
-        <div class="product-text">House Coffee</div>
-        <div class="quantity-buttons">
-          <button class="customization-button">-</button>
-          <input type="text" value="0" />
-          <button class="customization-button">+</button>
+      <div>
+        <% order.forEach(function(product){%>
+          <form action="/cart/<%=product.id%>?_method=DELETE" method="POST" class="delete-form">
+         <div class="product-items">
+          <div class="product-text"><%=product.name%></div>
+          <div class="quantity-buttons">
+            <button class="customization-button">-</button>
+            <input type="text" value="1" />
+            <button class="customization-button">+</button>
+          </div>
+            <div class="remove">
+              <button class = "remove" type="submit">Remove</button>
+            </div>
+          </form>
         </div>
-        <div class="remove">
-          <button>Remove</button>
-        </div>
+        <%})%>
       </div>
     </div>
     <div id="checkout-button">
@@ -56,3 +63,4 @@
     </div>
   </body>
 </html>
+
