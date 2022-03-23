@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script defer src="/javascripts/customization-button.js"></script>
+    <script defer src="/javascripts/size-buttons.js"></script>
     <title>Java the Hut - Drinks</title>
   </head>
   <body>
@@ -53,16 +54,34 @@
         <div class="size-options">Size?</div>
         <div class="cup-sizes">
           <div class="cup-buttons">
-            <img src="/images/small.png" height="70px" width="70" /><br />
-            <button>Small</button>
+            <img
+              src="/images/small.png"
+              onclick="smallClickHandler()"
+              height="70px"
+              width="70"
+              id="small-size"
+            /><br />
+            <p id="cup-text-small">Small</p>
           </div>
           <div class="cup-buttons">
-            <img src="/images/medium.png" height="80px" width="80" /><br />
-            <button>Medium</button>
+            <img
+              src="/images/medium.png"
+              onclick="mediumClickHandler()"
+              height="80px"
+              width="80"
+              id="medium-size"
+            /><br />
+            <p id="cup-text-medium">Medium</p>
           </div>
           <div class="cup-buttons">
-            <img src="/images/large.png" height="85px" width="85" /><br />
-            <button>Large</button>
+            <img
+              src="/images/large.png"
+              onclick="largeClickHandler()"
+              height="85px"
+              width="85"
+              id="large-size"
+            /><br />
+            <p id="cup-text-large">Large</p>
           </div>
         </div>
       </div>

@@ -105,14 +105,6 @@ a:hover {
   justify-content: space-around;
 }
 
-.cup-sizes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 20px;
-}
-
 .customizations {
   margin-top: 10px;
   padding: 10px 80px;
@@ -182,7 +174,7 @@ h3 {
   font-size: 20px;
 }
 
-.cup-buttons:hover {
+.cup-buttons > img:hover {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
@@ -358,9 +350,8 @@ a:hover {
 }
 
 .cup-sizes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: flex-end;
   gap: 20px;
 }
@@ -434,10 +425,10 @@ h3 {
   font-size: 20px;
 }
 
-.cup-buttons:hover {
+/* .cup-buttons:hover {
   -webkit-filter: invert(100%);
   filter: invert(100%);
-}
+} */
 
 .cart-button > button {
   background-color: #00a862;
@@ -501,4 +492,8 @@ h3 {
   margin-left: 200px;
   margin-top: 115px;
   font-size: 25px;
+}
+
+p {
+  text-align: center;
 }

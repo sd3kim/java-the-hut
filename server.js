@@ -7,7 +7,7 @@ var logger = require("morgan");
 require("dotenv").config();
 
 var indexRouter = require("./routes/index");
-var javahutRouter = require("./routes/javahut");
+var productRouter = require("./routes/products");
 
 var app = express();
 
@@ -20,26 +20,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/", javahutRouter);
-
-// app.use("/", indexRouter);
-// app.use("/javahut", javahutRouter);
+app.use("/", indexRouter);
+app.use("/", productRouter);
 
 app.get("/", (req, res) => {
   res.render("index");
 });
-
-// app.get("/menu", (req, res) => {
-//   res.render("javahut/menu");
-// });
-
-// app.get("/product", (req, res) => {
-//   res.render("javahut/product");
-// });
-
-// app.get("/cart", (req, res) => {
-//   res.render("javahut/cart");
-// });
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

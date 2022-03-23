@@ -1,7 +1,10 @@
-// var express = require("express");
-// var router = express.Router();
+var express = require("express");
+var router = express.Router();
+const javahutCtrl = require("../controllers/javahut");
+const db = require("../config/database");
 
-// const foodCtrl = require("../controllers/food");
-// router.get("/menu", foodCtrl.index);
+router.get("/home", javahutCtrl.home);
 
-// module.exports = router;
+router.get("/menu", javahutCtrl.menu);
+
+module.exports = router;
