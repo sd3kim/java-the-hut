@@ -9,6 +9,7 @@ require("dotenv").config();
 
 var indexRouter = require("./routes/index");
 var javahutRouter = require("./routes/javahut");
+var cartRouter = require("./routes/cart");
 
 var app = express();
 
@@ -23,8 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", javahutRouter);
-// app.use("/", indexRouter);
-// app.use("/javahut", javahutRouter);
+app.use("/", cartRouter);
 
 app.get("/", (req, res) => {
   res.render("index");

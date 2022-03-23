@@ -1,5 +1,12 @@
-const button = document.querySelector(".remove");
-const productItems = document.querySelector(".product-items");
-button.addEventListener("click", function () {
-  div.classList.remove("product-items");
-});
+const button = document.querySelectorAll(".remove");
+const productItems = document.querySelectorAll(".product-items");
+function removeFunction() {
+  productItems.forEach(function (e) {
+    e.remove();
+  });
+}
+// button.forEach(function (evt) {
+//   evt.addEventListener("click", removeFunction);
+// });
+
+button.addEventListener("click", removeFunction);
