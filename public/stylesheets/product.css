@@ -65,25 +65,18 @@ a:hover {
   display: flex;
 }
 
-.product-description > p {
+.product-description > input {
+  background-color: #1f3933;
   color: white;
+  border: none;
   font-size: 2.4rem;
   text-align: center;
-  margin-left: 200px;
   margin-top: 110px;
   font-weight: bold;
   font-family: oDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-/* 
-.customization-button {
-  height: 22px;
-  width: 22px;
-  margin-left: 10px;
-} */
 
 .sizes {
-  /* background-color: #1f3933; */
-  /* margin-top: 10px; */
   padding: 5px 80px;
   border-radius: 7px;
   opacity: 90%;
@@ -105,23 +98,12 @@ a:hover {
   justify-content: space-around;
 }
 
-.cup-sizes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 20px;
-}
-
 .customizations {
   margin-top: 10px;
   padding: 10px 80px;
   border-radius: 7px;
   font-weight: bold;
   min-width: 154px;
-  /* background-color: rgb(81, 134, 81); */
-  /* background-color: #1f3933;
-  opacity: 90%; */
 }
 
 #cream,
@@ -182,7 +164,7 @@ h3 {
   font-size: 20px;
 }
 
-.cup-buttons:hover {
+.cup-buttons > img:hover {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
@@ -326,16 +308,8 @@ a:hover {
   font-weight: bold;
   font-family: oDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-/* 
-.customization-button {
-  height: 22px;
-  width: 22px;
-  margin-left: 10px;
-} */
 
 .sizes {
-  /* background-color: #1f3933; */
-  /* margin-top: 10px; */
   padding: 5px 80px;
   border-radius: 7px;
   opacity: 90%;
@@ -358,9 +332,8 @@ a:hover {
 }
 
 .cup-sizes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: flex-end;
   gap: 20px;
 }
@@ -371,15 +344,12 @@ a:hover {
   border-radius: 7px;
   font-weight: bold;
   min-width: 154px;
-  /* background-color: rgb(81, 134, 81); */
-  /* background-color: #1f3933;
-  opacity: 90%; */
 }
 
-#cream,
-#milk,
-#sugar {
-  width: 20px;
+#input-cream,
+#input-milk,
+#input-sugar {
+  width: 30px;
   text-align: center;
 }
 
@@ -432,11 +402,6 @@ h3 {
   border: none;
   background-color: transparent;
   font-size: 20px;
-}
-
-.cup-buttons:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
 }
 
 .cart-button > button {
@@ -501,4 +466,8 @@ h3 {
   margin-left: 200px;
   margin-top: 115px;
   font-size: 25px;
+}
+
+p {
+  text-align: center;
 }
