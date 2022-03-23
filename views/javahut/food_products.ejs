@@ -30,24 +30,24 @@
         </div>
       </nav>
     </header>
-    <div class="product">
-      <div class="product-wrapper">
-        <div class="product-img">
-          <img
-            src="https://globalassets.starbucks.com/assets/041502ea2476446ba1118a7fe18d4dcb.jpg?impolicy=1by1_wide_topcrop_630"
-          />
-        </div>
-        <div class="product-description">
-          <p><%= food.name %></p>
-        </div>
-        <div class="product-description-foodprice">
-          <p>$<%= food.price %></p>
+    <form action="/cart" method="POST" autocomplete="off">
+      <div class="product">
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img src="<%=food.product_image%>" />
+          </div>
+          <div class="product-description">
+            <input type="text" name="name" value="<%= food.name %>" />
+          </div>
+          <div class="product-description-foodprice">
+            <p>$<%= food.price %></p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="cart-button">
-      <button>Add to Cart</button>
-    </div>
+      <div class="cart-button">
+        <button>Add to Cart</button>
+      </div>
+    </form>
     <div class="back-link">
       <a href="/menu">Back</a>
     </div>

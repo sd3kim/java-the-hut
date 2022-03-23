@@ -32,102 +32,133 @@
         </div>
       </nav>
     </header>
-    <div class="product">
-      <div class="product-wrapper">
-        <div class="product-img">
-          <img
-            src="https://globalassets.starbucks.com/assets/041502ea2476446ba1118a7fe18d4dcb.jpg?impolicy=1by1_wide_topcrop_630"
-          />
-        </div>
-        <div class="product-description">
-          <p><%= drinks.name %></p>
-        </div>
-        <div class="product-description-drinkprice">
-          <p>Small: $<%= drinks.price_small %></p>
-          <p>Medium: $<%= drinks.price_medium %></p>
-          <p>Large: $<%= drinks.price_large %></p>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="sizes">
-        <div class="size-options">Size?</div>
-        <div class="cup-sizes">
-          <div class="cup-buttons">
-            <img
-              src="/images/small.png"
-              onclick="smallClickHandler()"
-              height="70px"
-              width="70"
-              id="small-size"
-            /><br />
-            <p id="cup-text-small">Small</p>
-          </div>
-          <div class="cup-buttons">
-            <img
-              src="/images/medium.png"
-              onclick="mediumClickHandler()"
-              height="80px"
-              width="80"
-              id="medium-size"
-            /><br />
-            <p id="cup-text-medium">Medium</p>
-          </div>
-          <div class="cup-buttons">
-            <img
-              src="/images/large.png"
-              onclick="largeClickHandler()"
-              height="85px"
-              width="85"
-              id="large-size"
-            /><br />
-            <p id="cup-text-large">Large</p>
-          </div>
-        </div>
-      </div>
-      <div class="customizations">
-        <h2>How would you like it?</h2>
-        <div class="labels">
-          <div class="customization-header">
-            <h3>Cream</h3>
-          </div>
-          <div class="customization-button">
-            <button onclick="subCreamTotal()" id="sub-cream">-</button>
-            <input class="input" id="input-cream" placeholder="0" />
-            <button onclick="addCreamTotal()" id="add-cream">+</button>
-          </div>
-        </div>
-        <div class="labels">
-          <div class="customization-header">
-            <h3>Milk</h3>
-          </div>
-          <div class="customization-button">
-            <button onclick="subMilkTotal()" id="sub-milk">-</button>
-            <input class="input" id="input-milk" placeholder="0" />
-            <button onclick="addMilkTotal()" id="add-milk">+</button>
-          </div>
-        </div>
-        <div class="labels">
-          <div class="customization-header">
-            <h3>Sugar</h3>
-          </div>
-          <div class="customization-button">
-            <button onclick="subSugarTotal()" id="sub-sugar">-</button>
-            <input class="input" id="input-sugar" placeholder="0" />
-            <button onclick="addSugarTotal()" id="add-sugar">+</button>
-          </div>
-        </div>
-        <div class="labels">
-          <div class="customization-header">
-            <h3>Black</h3>
-          </div>
-          <div class="customization-button">
-            <input type="checkbox" id="customization-checkbox" />
-          </div>
-        </div>
-      </div>
-    </div>
     <form action="/cart" method="POST" autocomplete="off">
+      <div class="product">
+        <div class="product-wrapper">
+          <div class="product-img">
+            <img
+              src="https://globalassets.starbucks.com/assets/041502ea2476446ba1118a7fe18d4dcb.jpg?impolicy=1by1_wide_topcrop_630"
+            />
+          </div>
+          <div class="product-description">
+            <input type="text" name="name" value="<%= drinks.name %>" />
+            <input type="text" name="id" value="<%= drinks.id %>" hidden />
+          </div>
+          <div class="product-description-drinkprice">
+            <p>Small: $<%= drinks.price_small %></p>
+            <p>Medium: $<%= drinks.price_medium %></p>
+            <p>Large: $<%= drinks.price_large %></p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sizes">
+          <div class="size-options">Size?</div>
+          <div class="cup-sizes">
+            <div class="cup-buttons">
+              <img
+                src="/images/small.png"
+                onclick="smallClickHandler()"
+                height="70px"
+                width="70"
+                id="small-size"
+              /><br />
+              <p id="cup-text-small">Small</p>
+            </div>
+            <div class="cup-buttons">
+              <img
+                src="/images/medium.png"
+                onclick="mediumClickHandler()"
+                height="80px"
+                width="80"
+                id="medium-size"
+              /><br />
+              <p id="cup-text-medium">Medium</p>
+            </div>
+            <div class="cup-buttons">
+              <img
+                src="/images/large.png"
+                onclick="largeClickHandler()"
+                height="85px"
+                width="85"
+                id="large-size"
+              /><br />
+              <p id="cup-text-large">Large</p>
+            </div>
+          </div>
+        </div>
+        <div class="customizations">
+          <h2>How would you like it?</h2>
+          <div class="labels">
+            <div class="customization-header">
+              <h3>Cream</h3>
+            </div>
+            <div class="customization-button">
+              <input
+                type="button"
+                onclick="subCreamTotal()"
+                id="sub-cream"
+                value="-"
+              />
+              <input class="input" id="input-cream" placeholder="0" />
+              <input
+                type="button"
+                onclick="addCreamTotal()"
+                id="add-cream"
+                value="+"
+              />
+            </div>
+          </div>
+          <div class="labels">
+            <div class="customization-header">
+              <h3>Milk</h3>
+            </div>
+            <div class="customization-button">
+              <input
+                type="button"
+                onclick="subMilkTotal()"
+                id="sub-milk"
+                value="-"
+              />
+              <input class="input" id="input-milk" placeholder="0" />
+              <input
+                type="button"
+                onclick="addMilkTotal()"
+                id="add-milk"
+                value="+"
+              />
+            </div>
+          </div>
+          <div class="labels">
+            <div class="customization-header">
+              <h3>Sugar</h3>
+            </div>
+            <div class="customization-button">
+              <input
+                type="button"
+                onclick="subSugarTotal()"
+                id="sub-sugar"
+                value="-"
+              />
+              <input class="input" id="input-sugar" placeholder="0" />
+              <input
+                type="button"
+                onclick="addSugarTotal()"
+                id="add-sugar"
+                value="+"
+              />
+            </div>
+          </div>
+          <div class="labels">
+            <div class="customization-header">
+              <h3>Black</h3>
+            </div>
+            <div class="customization-button">
+              <input type="checkbox" id="customization-checkbox" />
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="cart-button">
         <button>Add to Cart</button>
       </div>

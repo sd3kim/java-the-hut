@@ -7,8 +7,8 @@ router.get("/drink_products/:id", productCtrl.showDrink);
 
 router.get("/food_products/:id", productCtrl.showFood);
 
-router.get("/cart", productCtrl.showCart);
+// router.get("/cart", productCtrl.showCart);
 
-router.post("/cart", productCtrl.addToCart);
+// router.post("/cart", productCtrl.addToCart);
 
 module.exports = router;
