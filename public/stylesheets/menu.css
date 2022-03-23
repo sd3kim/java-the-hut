@@ -10,7 +10,7 @@ body {
 nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 10px;
   margin-left: 20px;
   margin-right: 20px;
@@ -20,8 +20,18 @@ nav {
   border-radius: 15px;
 }
 
-h2 {
+#drinks-header {
   color: black;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#food-header {
+  color: black;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 60px;
 }
 
 .nav-wrapper {
@@ -31,8 +41,9 @@ h2 {
 .nav-java {
   margin-right: 10px;
   margin-left: 10px;
-  font-family: "Poppins", "Press Start 2P", cursive;
   color: black;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .nav-java:hover {
@@ -40,7 +51,8 @@ h2 {
 }
 
 .nav-home {
-  margin-left: 150px;
+  margin-left: 50px;
+  margin-right: 10px;
   padding: 10px;
   color: black;
 }
@@ -58,7 +70,9 @@ a {
 }
 
 .navbar {
-  margin-top: 16px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 a:hover {
@@ -81,6 +95,7 @@ a:hover {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+  padding: 20px 0;
   /* background-color: rgb(169, 149, 123); */
   background-color: white;
   opacity: 0.8;
@@ -102,6 +117,7 @@ a:hover {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+  padding: 20px 0;
   /* background-color: rgb(169, 149, 123); */
   background-color: white;
   opacity: 0.8;
