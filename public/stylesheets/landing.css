@@ -3,12 +3,14 @@ body {
   /* background-color: #8baf81; */
   background-image: url("../images/bg-home.jpg");
   background-size: cover;
-  background-position: bottom left;
+  /* background-position: bottom; */
   background-attachment: fixed;
 }
 
 h1 {
   font-family: "Poppins", "Press Start 2P", cursive;
+  font-size: 85px;
+  margin: 50px;
   /* text-align: center; */
 }
 
@@ -25,20 +27,24 @@ h1 {
   background-color: white;
   opacity: 80%;
   width: 500px;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #hut-logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 200px;
+  float: right;
+  margin-right: 20px;
 }
 
 #hut {
-  width: 200px;
-  height: 200px;
-  /* margin-left: 645px; */
-  margin-top: 300px;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  /* margin-right: -20px; */
 }
 
 #hut:hover {
@@ -49,6 +55,8 @@ h1 {
 p {
   text-align: center;
   color: white;
+  float: right;
+  margin-right: 15px;
 }
 
 @media only screen and (max-width: 1000px) {
