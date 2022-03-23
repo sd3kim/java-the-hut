@@ -21,7 +21,6 @@ async function cart(req, res, next) {
 async function deleteProduct(req, res, next) {
   try {
     const { id } = req.params;
-    // const { name } = req.body;
     const { rows } = await db.query("DELETE FROM orders WHERE id= $1", [id]);
     res.redirect("/cart");
   } catch (err) {

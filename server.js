@@ -8,7 +8,7 @@ var methodOverride = require("method-override");
 require("dotenv").config();
 
 var indexRouter = require("./routes/index");
-var javahutRouter = require("./routes/javahut");
+var productRouter = require("./routes/products");
 var cartRouter = require("./routes/cart");
 
 var app = express();
@@ -23,7 +23,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/", javahutRouter);
+app.use("/", indexRouter);
+app.use("/", productRouter);
 app.use("/", cartRouter);
 
 app.get("/", (req, res) => {
