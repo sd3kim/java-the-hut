@@ -47,7 +47,7 @@ This project was created in collaboration with:
 
 ### **Getting Started**
 
-https://sd3kim.github.io/futurama-man/
+https://cafe-java-hut.herokuapp.com/home
 
 Users can browse through the menu page to select a hot/cold drink or fresh baked good, with options to select a size or customize the drink to your liking! The cart page will allow users to view their added items, with the option to remove if desired. When the user is all set to check out, the 'Order' button can be pressed displaying a nice "Thank You" message and showing the contents of the order.
 

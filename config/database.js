@@ -1,5 +1,7 @@
 const { Pool } = require("pg");
-//create a new Pool connection with our credentials
+const connectionString =
+  "postgresql://dbuser:secretpassword@database.server.com:3211/mydb";
+
 const pool = new Pool({
   connectionString: process.env.DATABSE_URL,
   ssl: {
