@@ -52,8 +52,9 @@
           <div class="product-items">
             <div class="product-text"><%= product.name %></div>
             <div class="product-customizations">
-              Cream: <%= product.cream %>, Milk: <%= product.milk %>, Sugar: <%=
-              product.sugar %>
+              <% if (product.drink_id) {%> Cream:<%=product.customization_cream
+              %>, Milk: <%=product.customization_milk %>, Sugar:
+              <%=product.customization_sugar %> <% }%>
             </div>
             <div class="quantity-buttons">
               <input
