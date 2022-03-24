@@ -35,6 +35,13 @@
         <div class="product-wrapper">
           <div class="product-img">
             <img src="<%=food.product_image%>" />
+            <input
+              type="text"
+              name="price"
+              id="price"
+              value="<%=food.price%>"
+              hidden
+            />
           </div>
           <div class="product-description">
             <input type="text" name="name" value="<%= food.name %>" />

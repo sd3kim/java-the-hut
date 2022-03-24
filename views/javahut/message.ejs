@@ -37,7 +37,6 @@
             <h1>Thank you!</h1>
             <p id ="order-placed">Your order has been placed: </p>
             <% order.forEach(function(product){%>
-
                 <p class="product-name"><%=product.name%></p>
                 <% if(product.drink_id && product.customization_cream===0 && product.customization_milk===0 && product.customization_sugar===0){%>
                   No Cream | No Milk | No Sugar  <%}%>   
@@ -58,7 +57,9 @@
                       | Milk: <%=product.customization_milk%>
                       | No Sugar
                       <%}%>
-            <%})%>
+                      <br>
+                       price: $<%=product.price%>   
+                      <%})%>
           </div>
       </div>
       <div id="hut-logo">
