@@ -59,8 +59,8 @@ h3 {
 
 .product-column {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 290px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 120px;
   margin-top: 50px;
   padding: 10px;
   border: 2px solid black;
@@ -77,8 +77,8 @@ h3 {
 
 .product-items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 290px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 120px;
   text-align: center;
   justify-items: center;
   padding: 10px;
@@ -89,7 +89,8 @@ h3 {
   justify-items: center;
 }
 
-.product-text {
+.product-text,
+.product-customizations {
   margin-top: 5px;
 }
 
@@ -128,7 +129,8 @@ input {
   text-align: center;
 }
 
-.customization-button {
+#sub-quantity-button,
+#add-quantity-button {
   width: 25px;
   height: 20px;
   text-align: center;
