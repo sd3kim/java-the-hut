@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script defer src="/javascripts/cart-remove.js"></script>
+    <script defer src="/javascripts/quantity-buttons.js"></script>
     <title>Java the Hut - Cart</title>
   </head>
   <body>
@@ -50,9 +51,9 @@
           <div class="product-items">
             <div class="product-text"><%= product.name %></div>
             <div class="quantity-buttons">
-              <input type="button" class="customization-button" value="-" />
-              <input type="text" value="1" name="quantity" />
-              <input type="button" class="customization-button" value="+" />
+              <input type="button" class="add customization-button " value="-" />
+              <input type="number" value="1" name="quantity" class="input"/>
+              <input type="button" class="customization-button sub" value="+" />
             </div>
             <div class="remove">
               <button class="remove" type="submit">Remove</button>

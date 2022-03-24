@@ -138,9 +138,10 @@ input {
 }
 
 .thanks-message {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  margin-top: 40px;
+}
+
+.thanks-message > h2 {
+  margin-top: 120px;
 }
