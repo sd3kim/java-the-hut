@@ -22,8 +22,6 @@ function mediumClickHandler() {
     cupTextMediumEl.style.color = "red";
     console.log("Medium has been selected");
     price.value = priceMeduim.value;
-    // price.value = 2;
-    // price.textContent = 2;
   }
 }
 
@@ -32,18 +30,5 @@ function largeClickHandler() {
     cupTextLargeEl.style.color = "red";
     console.log("Large has been selected");
     price.value = priceLarge.value;
-    // price.value = 3;
-    // price.textContent = 3;
   }
 }
-// function check() {
-//   if (mediumBtnEl.clicked) {
-//     price.value = "2.25";
-//     price.textContent = "2.25";
-//   } else if (largeBtnEl.clicked) {
-//     price.value = "3.50";
-//     price.textContent = "3.50";
-//   }
-// }
-// check();
-// console.log(check());

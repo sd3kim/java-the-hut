@@ -13,9 +13,6 @@ async function index(req, res, next) {
 // add to cart not orders
 async function addToCart(req, res, next) {
   const { id, name, cream, milk, sugar, price } = req.body;
-  console.log(req.body);
-  let floatPrice = parseFloat(price);
-  console.log("this is price", floatPrice);
   const { rows } = await db.query(
     "INSERT INTO orders (drink_id, name, customization_cream, customization_milk, customization_sugar, price) VALUES ($1, $2, $3, $4, $5, $6) ",
     [id, name, cream, milk, sugar, parseFloat(price)]
