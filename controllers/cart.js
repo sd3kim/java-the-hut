@@ -1,5 +1,6 @@
 const db = require("../config/database");
 
+// show all items in cart page
 async function index(req, res, next) {
   try {
     const { rows } = await db.query("SELECT * FROM orders");
@@ -9,7 +10,7 @@ async function index(req, res, next) {
   }
 }
 
-async function cart(req, res, next) {
+async function addToCart(req, res, next) {
   const { id, name } = req.body;
   const { rows } = await db.query(
     "INSERT INTO orders (drink_id, name) VALUES ($1,$2) ",
@@ -21,6 +22,7 @@ async function cart(req, res, next) {
 async function deleteProduct(req, res, next) {
   try {
     const { id } = req.params;
+    // const { name } = req.body;
     const { rows } = await db.query("DELETE FROM orders WHERE id= $1", [id]);
     res.redirect("/cart");
   } catch (err) {
@@ -28,8 +30,20 @@ async function deleteProduct(req, res, next) {
   }
 }
 
+async function send(req, res, next) {
+  try {
+    const { quantity } = req.body;
+    console.log("this is body", quantity);
+    const { rows } = await db.query("SELECT * FROM orders");
+    res.render("javahut/message", { order: rows, quantity: quantity });
+  } catch (err) {
+    next(err);
+  }
+}
+
 module.exports = {
   index,
-  cart,
+  addToCart,
   delete: deleteProduct,
+  send,
 };

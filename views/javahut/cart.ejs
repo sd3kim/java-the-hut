@@ -8,7 +8,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500"
       rel="stylesheet"
-    /><script defer src="/javascripts/cart.js"></script>
+    />
+    <script defer src="/javascripts/cart-remove.js"></script>
     <title>Java the Hut - Cart</title>
   </head>
   <body>
@@ -38,32 +39,34 @@
         <div><h3>Keep</h3></div>
       </div>
     </div>
-
     <div class="product-items-wrapper">
       <div>
         <% order.forEach(function(product){%>
-          <form action="/cart/<%=product.id%>?_method=DELETE" method="POST" class="delete-form">
-         <div class="product-items">
-          <div class="product-text"><%=product.name%></div>
-          <div class="quantity-buttons">
-            <button class="customization-button">-</button>
-            <input type="text" value="1" />
-            <button class="customization-button">+</button>
-          </div>
+        <form
+          action="/cart/<%=product.id%>?_method=DELETE"
+          method="POST"
+          class="delete-form"
+        >
+          <div class="product-items">
+            <div class="product-text"><%= product.name %></div>
+            <div class="quantity-buttons">
+              <input type="button" class="customization-button" value="-" />
+              <input type="text" value="1" name="quantity" />
+              <input type="button" class="customization-button" value="+" />
+            </div>
             <div class="remove">
-              <button type="submit">Remove</button>
+              <button class="remove" type="submit">Remove</button>
             </div>
-            </div>
-            </form> 
-            <%})%>
-        </div>
-        </div>
-       
+          </div>
+        </form>
+        <form action="/message" method="POST" autocomplete="off">
+          <input type="text" value="1" name="quantity" hidden />
+        <%})%>
       </div>
     </div>
-    <div id="checkout-button">
-      <button id="checkout">Order</button>
-    </div>
+      <div id="checkout-button">
+        <button type="submit" id="checkout">Order</button>
+      </div>
+    </form>
   </body>
 </html>
-
