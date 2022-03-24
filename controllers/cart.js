@@ -12,12 +12,13 @@ async function index(req, res, next) {
 }
 
 async function addToCart(req, res, next) {
+  // console.log(req.body);
   const { id, name, cream, milk, sugar } = req.body;
   const { rows } = await db.query(
     "INSERT INTO orders (drink_id, name, customization_cream, customization_milk, customization_sugar) VALUES ($1, $2, $3, $4, $5) ",
     [id, name, cream, milk, sugar]
   );
-  res.redirect("/cart");
+  // res.redirect("/menu");
 }
 
 async function deleteProduct(req, res, next) {

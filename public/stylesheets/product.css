@@ -141,7 +141,7 @@ p {
 }
 
 .sizes {
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 5px 80px;
   border-radius: 7px;
   opacity: 90%;
@@ -166,7 +166,7 @@ p {
 }
 
 .customizations {
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px 120px;
   border-radius: 7px;
   font-weight: bold;
@@ -237,8 +237,8 @@ p {
 
 .cart-button > button {
   background-color: rgb(133, 117, 98);
-  border-radius: 500px;
-  box-shadow: 0 0 6px rgb(0 0 0 / 24%), 0 8px 12px rgb(0 0 0 / 14%);
+  border-radius: 15px;
+  /* box-shadow: 0 0 6px rgb(0 0 0 / 24%), 0 8px 12px rgb(0 0 0 / 14%); */
   color: white;
   display: inline-block;
   font-size: 1rem;
