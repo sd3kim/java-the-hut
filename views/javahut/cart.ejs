@@ -51,8 +51,8 @@
           <div class="product-items">
             <div class="product-text"><%= product.name %></div>
             <div class="quantity-buttons">
-              <input type="button" class="add customization-button " value="-" />
-              <input type="number" value="1" name="quantity" class="input"/>
+              <input type="button" class="add customization-button" value="-" />
+              <input type="number" value="1" name="quantity" class="input" />
               <input type="button" class="customization-button sub" value="+" />
             </div>
             <div class="remove">
@@ -60,11 +60,11 @@
             </div>
           </div>
         </form>
-        <form action="/message" method="POST" autocomplete="off">
-          <input type="text" value="1" name="quantity" hidden />
         <%})%>
       </div>
     </div>
+    <form action="/message" method="POST" autocomplete="off">
+      <input type="text" value="1" name="quantity" hidden />
       <div id="checkout-button">
         <button type="submit" id="checkout">Order</button>
       </div>
