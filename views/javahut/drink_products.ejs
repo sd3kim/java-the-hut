@@ -12,7 +12,7 @@
     <script defer src="/javascripts/customization-button.js"></script>
     <script defer src="/javascripts/size-buttons.js"></script>
     <script defer src="/javascripts/customization-quantity.js"></script>
-    <title>Java the Hut - Drinks</title>
+    <title>Café Java Hut - Drinks</title>
   </head>
   <body>
     <header>
@@ -24,7 +24,7 @@
             height="60px"
             width="70px"
           />
-          <a class="nav-java" href="/home">Java the Hut</a>
+          <a class="nav-java" href="/home">Café Java Hut</a>
         </div>
         <div class="navbar">
           <a class="nav-home" href="/menu">Menu</a>
@@ -63,6 +63,13 @@
                 id="small-size"
               /><br />
               <p id="cup-text-small">Small</p>
+              <input
+                type="text"
+                name="price"
+                id="price"
+                value="<%=drinks.price_small%>"
+                hidden
+              />
             </div>
             <div class="cup-buttons">
               <img
@@ -73,6 +80,13 @@
                 id="medium-size"
               /><br />
               <p id="cup-text-medium">Medium</p>
+              <input
+                type="text"
+                name="price"
+                id="price-medium"
+                value="<%=drinks.price_medium%>"
+                hidden
+              />
             </div>
             <div class="cup-buttons">
               <img
@@ -83,6 +97,13 @@
                 id="large-size"
               /><br />
               <p id="cup-text-large">Large</p>
+              <input
+                type="text"
+                name="price"
+                id="price-large"
+                value="<%=drinks.price_large%>"
+                hidden
+              />
             </div>
           </div>
         </div>
@@ -99,7 +120,12 @@
                 id="sub-cream"
                 value="-"
               />
-              <input class="input" id="input-cream" value="0" name="cream" />
+              <input
+                class="input"
+                id="input-cream"
+                value="<% drinks.cream %>"
+                name="cream"
+              />
               <input
                 type="button"
                 onclick="addCreamTotal(); getCreamTotal()"
@@ -119,7 +145,12 @@
                 id="sub-milk"
                 value="-"
               />
-              <input class="input" id="input-milk" value="0" name="milk" />
+              <input
+                class="input"
+                id="input-milk"
+                value="<% drinks.milk %>"
+                name="milk"
+              />
               <input
                 type="button"
                 onclick="addMilkTotal();  getMilkTotal()"
@@ -139,7 +170,12 @@
                 id="sub-sugar"
                 value="-"
               />
-              <input class="input" id="input-sugar" value="0" name="sugar" />
+              <input
+                class="input"
+                id="input-sugar"
+                value="<% drinks.sugar %>"
+                name="sugar"
+              />
               <input
                 type="button"
                 onclick="addSugarTotal(); getSugarTotal()"
@@ -148,20 +184,10 @@
               />
             </div>
           </div>
-          <div class="labels">
-            <div class="customization-header">
-              <h3>Black</h3>
-            </div>
-            <div class="customization-button">
-              <input type="checkbox" id="customization-checkbox" />
-            </div>
-          </div>
         </div>
       </div>
       <div class="cart-button">
         <button>Add to Cart</button>
-      </div>
-      <div>
         <a class="go-to-cart-button" href="/cart">Go To Cart</a>
       </div>
     </form>
