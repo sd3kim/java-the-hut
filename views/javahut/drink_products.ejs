@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/product.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500&family=Poppins:wght@400;700"
       rel="stylesheet"
     />
     <script defer src="/javascripts/customization-button.js"></script>
-    <script defer src="/javascripts/quantity-buttons.js"></script>
     <script defer src="/javascripts/size-buttons.js"></script>
+    <script defer src="/javascripts/customization-quantity.js"></script>
     <title>Java the Hut - Drinks</title>
   </head>
   <body>
@@ -63,6 +63,13 @@
                 id="small-size"
               /><br />
               <p id="cup-text-small">Small</p>
+              <input
+                type="text"
+                name="price"
+                id="price"
+                value="<%=drinks.price_small%>"
+                hidden
+              />
             </div>
             <div class="cup-buttons">
               <img
@@ -73,6 +80,13 @@
                 id="medium-size"
               /><br />
               <p id="cup-text-medium">Medium</p>
+              <input
+                type="text"
+                name="price"
+                id="price-medium"
+                value="<%=drinks.price_medium%>"
+                hidden
+              />
             </div>
             <div class="cup-buttons">
               <img
@@ -83,6 +97,13 @@
                 id="large-size"
               /><br />
               <p id="cup-text-large">Large</p>
+              <input
+                type="text"
+                name="price"
+                id="price-large"
+                value="<%=drinks.price_large%>"
+                hidden
+              />
             </div>
           </div>
         </div>
@@ -95,14 +116,14 @@
             <div class="customization-button">
               <input
                 type="button"
-                onclick="subCreamTotal()"
+                onclick="subCreamTotal(); getCreamTotal()"
                 id="sub-cream"
                 value="-"
               />
-              <input class="input" id="input-cream" placeholder="0" />
+              <input class="input" id="input-cream" value="0" name="cream" />
               <input
                 type="button"
-                onclick="addCreamTotal()"
+                onclick="addCreamTotal(); getCreamTotal()"
                 id="add-cream"
                 value="+"
               />
@@ -115,14 +136,14 @@
             <div class="customization-button">
               <input
                 type="button"
-                onclick="subMilkTotal()"
+                onclick="subMilkTotal(); getMilkTotal()"
                 id="sub-milk"
                 value="-"
               />
-              <input class="input" id="input-milk" placeholder="0" />
+              <input class="input" id="input-milk" value="0" name="milk" />
               <input
                 type="button"
-                onclick="addMilkTotal()"
+                onclick="addMilkTotal();  getMilkTotal()"
                 id="add-milk"
                 value="+"
               />
@@ -135,14 +156,14 @@
             <div class="customization-button">
               <input
                 type="button"
-                onclick="subSugarTotal()"
+                onclick="subSugarTotal(); getSugarTotal()"
                 id="sub-sugar"
                 value="-"
               />
-              <input class="input" id="input-sugar" placeholder="0" />
+              <input class="input" id="input-sugar" value="0" name="sugar" />
               <input
                 type="button"
-                onclick="addSugarTotal()"
+                onclick="addSugarTotal(); getSugarTotal()"
                 id="add-sugar"
                 value="+"
               />
@@ -160,6 +181,9 @@
       </div>
       <div class="cart-button">
         <button>Add to Cart</button>
+      </div>
+      <div>
+        <a class="go-to-cart-button" href="/cart">Go To Cart</a>
       </div>
     </form>
     <div class="back-link">

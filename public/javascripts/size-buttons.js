@@ -4,76 +4,46 @@ const largeBtnEl = document.getElementById("large-size");
 const cupTextSmallEl = document.getElementById("cup-text-small");
 const cupTextMediumEl = document.getElementById("cup-text-medium");
 const cupTextLargeEl = document.getElementById("cup-text-large");
+const price = document.getElementById("price");
+const priceMeduim = document.getElementById("Price-medium");
+const priceLarge = document.getElementById("price-large");
 
 let isClicked = false;
 
-// function clickHandler() {
-//    return isClicked == true
-// }
-
 function smallClickHandler() {
   if ((isClicked = true)) {
-    cupTextSmallEl.style.color = "white";
+    cupTextSmallEl.style.color = "red";
     console.log("Small has been selected");
   }
 }
 
 function mediumClickHandler() {
   if ((isClicked = true)) {
-    cupTextMediumEl.style.color = "white";
+    cupTextMediumEl.style.color = "red";
     console.log("Medium has been selected");
+    price.value = priceMeduim.value;
+    // price.value = 2;
+    // price.textContent = 2;
   }
 }
 
 function largeClickHandler() {
   if ((isClicked = true)) {
-    cupTextLargeEl.style.color = "white";
+    cupTextLargeEl.style.color = "red";
     console.log("Large has been selected");
+    price.value = priceLarge.value;
+    // price.value = 3;
+    // price.textContent = 3;
   }
 }
-
-// smallBtnEl.addEventListener("click", clickHandler);
-
-// function smallSelect() {
-//   cupTextSmallEl.style.color = "white";
-//   console.log("small has been selected");
-// }
-
-// function mediumSelect() {
-//   console.log("medium has been selected");
-//   cupTextMediumEl.style.color = "white";
-// }
-
-// function largeSelect() {
-//   console.log("large has been selected");
-//   cupTextLargeEl.style.color = "white";
-// }
-
-// function sizeSelection() {
-//   if (smallBtnEl.clicked == true) {
-//     cupTextSmallEl.style.color = "white";
-//     alert("button was clicked");
-//     return;
-//   } else if (mediumBtnEl == true) {
-//     cupTextMediumEl.style.color = "white";
-//     alert("button was clicked");
-//     return;
-//   } else if (largeBtnEl == true) {
-//     cupTextLargeEl.style.color = "white";
-//     alert("button was clicked");
-//     return;
+// function check() {
+//   if (mediumBtnEl.clicked) {
+//     price.value = "2.25";
+//     price.textContent = "2.25";
+//   } else if (largeBtnEl.clicked) {
+//     price.value = "3.50";
+//     price.textContent = "3.50";
 //   }
 // }
-
-// if small is selected
-// then change color to white
-// and add it to the cart
-// return
-// else if medium is selected
-// then change color to white
-// and add it to the cart
-// return
-// else if large is selected
-// then change color to white
-// and add it to the cart
-// return
+// check();
+// console.log(check());

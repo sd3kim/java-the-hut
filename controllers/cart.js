@@ -12,18 +12,21 @@ async function index(req, res, next) {
 
 // add to cart not orders
 async function addToCart(req, res, next) {
-  const { name, id } = req.body;
-  const text = await db.query("SELECT * FROM orders WHERE drink_id =$1", [id]);
+  const { id, name, cream, milk, sugar, price } = req.body;
+  console.log(req.body);
+  let floatPrice = parseFloat(price);
+  console.log("this is price", floatPrice);
   const { rows } = await db.query(
-    "INSERT INTO orders (drink_id, name) VALUES ($1,$2) ",
-    [id, name]
+    "INSERT INTO orders (drink_id, name, customization_cream, customization_milk, customization_sugar, price) VALUES ($1, $2, $3, $4, $5, $6) ",
+    [id, name, cream, milk, sugar, parseFloat(price)]
   );
+  // res.redirect("/menu");
 }
 
 async function deleteProduct(req, res, next) {
   try {
     const { id } = req.params;
-    const { rows } = await db.query("DELETE FROM orders WHERE id= $1", [id]);
+    const { rows } = await db.query("DELETE FROM orders WHERE id = $1", [id]);
     res.redirect("/cart");
   } catch (err) {
     next(err);
@@ -32,10 +35,9 @@ async function deleteProduct(req, res, next) {
 
 async function send(req, res, next) {
   try {
-    const { quantity } = req.body;
-    console.log("this is body", quantity);
+    const { name, price } = req.body;
     const { rows } = await db.query("SELECT * FROM orders");
-    res.render("javahut/message", { order: rows, quantity: quantity });
+    res.render("javahut/message", { order: rows });
   } catch (err) {
     next(err);
   }

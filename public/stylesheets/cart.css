@@ -1,14 +1,21 @@
 body {
-  font-family: "Quicksand", sans-serif;
-  background-color: #ccb6a7;
+  font-family: "Poppins", "Quicksand", sans-serif;
+  background-image: url("../images/bg-cart.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 20px;
+  background-color: rgb(133, 117, 98);
+  opacity: 0.8;
+  border-radius: 15px;
 }
 
 .nav-wrapper {
@@ -17,12 +24,31 @@ nav {
 
 .nav-java {
   margin-right: 10px;
-  font-family: "Press Start 2P", cursive;
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-java:hover {
+  color: red;
 }
 
 .nav-home {
-  margin-left: 150px;
+  margin-left: 50px;
+  margin-right: 10px;
   padding: 10px;
+  color: black;
+}
+
+.nav-home:hover {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 a {
@@ -30,21 +56,23 @@ a {
   color: black;
   text-align: center;
   padding: 15px;
-}
-
-.navbar {
-  margin-top: 16px;
+  font-size: 20px;
 }
 
 a:hover {
   border-radius: 4px;
-  color: white;
+  color: rgb(169, 149, 123);
 }
 
 h1 {
   text-align: center;
   font-weight: bold;
-  margin-top: 100px;
+  margin-top: 50px;
+  color: rgb(34, 23, 23);
+}
+
+h3 {
+  text-align: center;
 }
 
 .product-column-wrapper {
@@ -55,14 +83,15 @@ h1 {
 
 .product-column {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 290px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 120px;
   margin-top: 50px;
   padding: 10px;
   border: 2px solid black;
   width: 900px;
-  background-color: darkgreen;
+  background-color: #1f3933;
   color: white;
+  border-radius: 10px;
 }
 
 .product-items-wrapper {
@@ -73,25 +102,36 @@ h1 {
 
 .product-items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 290px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 120px;
   text-align: center;
   justify-items: center;
   padding: 10px;
   width: 900px;
   border: 2px solid black;
   display: grid;
+  text-align: center;
+  justify-items: center;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.product-text {
+  display: flex;
+  align-items: center;
+}
+
+.product-customizations {
+  margin-top: 5px;
 }
 
 .quantity-buttons > input {
   width: 20px;
+  height: 16px;
   border: 1px solid black;
   justify-items: center;
   align-items: center;
-}
-
-h3 {
-  text-align: center;
 }
 
 #checkout-button {
@@ -104,44 +144,39 @@ h3 {
   height: 60px;
   margin-top: 150px;
   font-size: 20px;
-  color: darkgreen;
+  color: #1f3933;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.remove {
+  display: grid;
+  align-items: center;
 }
 
 .remove > button {
   border-radius: 5px;
   background-color: black;
   color: white;
-  padding: 6px;
   cursor: pointer;
+  height: 30px;
+  text-align: center;
 }
 
 input {
   text-align: center;
 }
 
-.customization-button {
+#sub-quantity-button,
+#add-quantity-button {
   width: 25px;
   height: 20px;
   text-align: center;
 }
 
 .quantity-buttons {
-  text-align: center;
-  margin-top: 5px;
-}
-
-.product-tex {
-  margin-top: 5px;
-}
-
-.thanks-message {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.thanks-message > h2 {
-  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
