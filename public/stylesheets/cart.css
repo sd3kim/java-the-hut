@@ -116,8 +116,10 @@ h3 {
   opacity: 0.8;
   border-radius: 10px;
 }
+
 .product-text {
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .product-customizations {
@@ -126,6 +128,7 @@ h3 {
 
 .quantity-buttons > input {
   width: 20px;
+  height: 16px;
   border: 1px solid black;
   justify-items: center;
   align-items: center;
@@ -173,6 +176,7 @@ input {
 }
 
 .quantity-buttons {
-  text-align: center;
-  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
