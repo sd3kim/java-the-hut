@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500&family=Poppins:wght@400;700"
       rel="stylesheet"
     />
-    <title>Java the Hut - Food</title>
+    <title>Café Java Hut- Food</title>
   </head>
   <body>
     <header>
@@ -21,7 +21,7 @@
             height="60px"
             width="70px"
           />
-          <a class="nav-java" href="/home">Java the Hut</a>
+          <a class="nav-java" href="/home">Café Java Hut/a>
         </div>
         <div class="navbar">
           <a class="nav-home" href="/menu">Menu</a>
@@ -36,12 +36,12 @@
           <div class="product-img">
             <img src="<%=food.product_image%>" />
             <input
-              type="text"
-              name="price"
-              id="price"
-              value="<%=food.price%>"
-              hidden
-            />
+            type="text"
+            name="price"
+            id="price"
+            value="<%=food.price%>"
+            hidden
+          />
           </div>
           <div class="product-description">
             <input type="text" name="name" value="<%= food.name %>" />
@@ -53,6 +53,7 @@
       </div>
       <div class="cart-button">
         <button>Add to Cart</button>
+        <a class="go-to-cart-button" href="/cart">Go To Cart</a>
       </div>
     </form>
     <div class="back-link">
