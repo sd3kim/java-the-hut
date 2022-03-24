@@ -4,9 +4,9 @@ const cartCtrl = require("../controllers/cart");
 
 router.get("/cart", cartCtrl.index);
 
-router.post("/cart", cartCtrl.addToCart);
+router.post("/cart", cartCtrl.create);
 
-router.post("/message", cartCtrl.send);
+router.post("/message", cartCtrl.createMessage);
 
 router.delete("/cart/:id", cartCtrl.delete);
 

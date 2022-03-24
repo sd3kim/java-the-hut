@@ -4,7 +4,7 @@ function home(req, res, next) {
   res.render("landing");
 }
 
-async function menu(req, res, next) {
+async function index(req, res, next) {
   try {
     const drinks = await db.query("SELECT * FROM drinks");
     const food = await db.query("SELECT * FROM food");
@@ -16,5 +16,5 @@ async function menu(req, res, next) {
 
 module.exports = {
   home,
-  menu,
+  index,
 };

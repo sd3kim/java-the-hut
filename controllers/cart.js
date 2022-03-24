@@ -1,6 +1,5 @@
 const db = require("../config/database");
 
-// show all items in cart page
 async function index(req, res, next) {
   try {
     const { rows } = await db.query("SELECT * FROM orders");
@@ -11,7 +10,7 @@ async function index(req, res, next) {
   }
 }
 
-async function addToCart(req, res, next) {
+async function create(req, res, next) {
   console.log(req.body);
   const { id, name, cream, milk, sugar, price } = req.body;
   const { rows } = await db.query(
@@ -30,7 +29,7 @@ async function deleteProduct(req, res, next) {
   }
 }
 
-async function send(req, res, next) {
+async function createMessage(req, res, next) {
   try {
     const { name } = req.body;
     const { rows } = await db.query("SELECT * FROM orders");
@@ -42,7 +41,7 @@ async function send(req, res, next) {
 
 module.exports = {
   index,
-  addToCart,
+  create,
   delete: deleteProduct,
-  send,
+  createMessage,
 };
