@@ -1,17 +1,21 @@
 body {
-  font-family: "Quicksand", sans-serif;
-  background-color: #8baf81;
-  margin-bottom: 100px;
-  position: relative;
+  font-family: "Poppins", "Quicksand", sans-serif;
+  background-image: url("../images/bg-menu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
   padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 20px;
-  margin-bottom: 10px;
+  background-color: rgb(133, 117, 98);
+  opacity: 0.8;
+  border-radius: 15px;
 }
 
 .nav-wrapper {
@@ -19,17 +23,45 @@ nav {
 }
 
 .nav-java {
-  font-family: "Press Start 2P", cursive;
   margin-right: 10px;
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-java:hover {
+  color: red;
 }
 
 .nav-home {
-  margin-left: 150px;
+  margin-left: 50px;
+  margin-right: 10px;
   padding: 10px;
+  color: black;
+}
+
+.nav-home:hover {
+  color: white;
 }
 
 .navbar {
-  margin-top: 16px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+}
+
+a:hover {
+  border-radius: 4px;
+  color: rgb(169, 149, 123);
 }
 
 .back-link > a {
@@ -38,26 +70,14 @@ nav {
   margin-left: 43rem;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  text-align: center;
-  padding: 15px;
-}
-
-a:hover {
-  border-radius: 4px;
-  color: white;
-}
-
 h2 {
-  font-family: "Press Start 2P", cursive;
-  border-bottom: 5px solid white;
+  font-family: "Poppins", "Press Start 2P", cursive;
+  border-bottom: 5px solid #1f3933;
   padding-bottom: 20px;
 }
 
 h3 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Poppins", "Quicksand", sans-serif;
 }
 
 p {
@@ -72,6 +92,11 @@ p {
 
 .product {
   background-color: #1f3933;
+  opacity: 0.8;
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 1480px;
 }
 
 .product-wrapper {
@@ -80,10 +105,12 @@ p {
 
 .product-description > input {
   background-color: #1f3933;
+  opacity: 0.8;
   color: white;
   border: none;
   font-size: 2.4rem;
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 190px;
   margin-top: 110px;
   font-weight: bold;
   font-family: oDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -102,8 +129,8 @@ p {
 .product-description-drinkprice > p {
   color: white;
   text-align: center;
-  margin-left: 200px;
-  margin-top: 60px;
+  margin-left: 130px;
+  margin-top: 50px;
 }
 
 .product-description-foodprice > p {
@@ -115,18 +142,21 @@ p {
 }
 
 .sizes {
+  margin-top: 10px;
   padding: 5px 80px;
   border-radius: 7px;
   opacity: 90%;
   min-width: 100px;
+  background-color: white;
+  opacity: 0.8;
 }
 
 .size-options {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Poppins", "Press Start 2P", cursive;
   font-weight: bold;
   font-size: 18px;
   margin: 40px 0;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #1f3933;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -138,10 +168,12 @@ p {
 
 .customizations {
   margin-top: 10px;
-  padding: 10px 80px;
+  padding: 10px 120px;
   border-radius: 7px;
   font-weight: bold;
   min-width: 154px;
+  background-color: white;
+  opacity: 0.8;
 }
 
 .customization-header {
@@ -200,18 +232,18 @@ p {
 }
 
 .cup-buttons > img:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
+  -webkit-filter: invert(70%);
+  filter: invert(70%);
 }
 
 .cart-button > button {
-  background-color: #00a862;
+  background-color: rgb(133, 117, 98);
   border-radius: 500px;
   box-shadow: 0 0 6px rgb(0 0 0 / 24%), 0 8px 12px rgb(0 0 0 / 14%);
   color: white;
   display: inline-block;
   font-size: 1rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Poppins", "Quicksand", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   padding: 18px 2.4rem;
@@ -232,6 +264,7 @@ p {
     padding-top: 90px;
     text-align: center;
   }
+
   .product-img > img {
     margin: 0;
   }

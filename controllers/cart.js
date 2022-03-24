@@ -11,10 +11,11 @@ async function index(req, res, next) {
 }
 
 async function addToCart(req, res, next) {
-  const { id, name } = req.body;
+  console.log(req.body);
+  const { id, name, cream, milk, sugar } = req.body;
   const { rows } = await db.query(
-    "INSERT INTO orders (drink_id, name) VALUES ($1,$2) ",
-    [id, name]
+    "INSERT INTO orders (drink_id, name, customization_cream, customization_milk, customization_sugar) VALUES ($1, $2, $3, $4, $5) ",
+    [id, name, cream, milk, sugar]
   );
   res.redirect("/cart");
 }
@@ -22,7 +23,6 @@ async function addToCart(req, res, next) {
 async function deleteProduct(req, res, next) {
   try {
     const { id } = req.params;
-    // const { name } = req.body;
     const { rows } = await db.query("DELETE FROM orders WHERE id= $1", [id]);
     res.redirect("/cart");
   } catch (err) {

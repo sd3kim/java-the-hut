@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/cart.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500&family=Poppins:wght@400;700"
       rel="stylesheet"
     />
     <script defer src="/javascripts/cart-remove.js"></script>
@@ -51,7 +51,10 @@
         >
           <div class="product-items">
             <div class="product-text"><%= product.name %></div>
-            <div class="product-customizations">Customizations</div>
+            <div class="product-customizations">
+              Cream: <%= product.cream %>, Milk: <%= product.milk %>, Sugar: <%=
+              product.sugar %>
+            </div>
             <div class="quantity-buttons">
               <input
                 type="button"
