@@ -65,9 +65,8 @@ a:hover {
 }
 
 .back-link > a {
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: bold;
-  margin-left: 43rem;
 }
 
 h2 {
@@ -235,20 +234,41 @@ p {
   filter: invert(70%);
 }
 
+.cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
 .cart-button > button {
-  background-color: rgb(133, 117, 98);
-  border-radius: 15px;
-  /* box-shadow: 0 0 6px rgb(0 0 0 / 24%), 0 8px 12px rgb(0 0 0 / 14%); */
-  color: white;
-  display: inline-block;
   font-size: 1rem;
   font-family: "Poppins", "Quicksand", sans-serif;
+  background-color: rgb(133, 117, 98);
+  border-radius: 15px;
+  color: white;
+  display: inline-block;
   font-weight: 700;
   line-height: 1.2;
   padding: 18px 2.4rem;
-  margin-left: 40rem;
   margin-bottom: 1rem;
-  margin-top: 50px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.go-to-cart-button {
+  font-size: 1rem;
+  font-family: "Poppins", "Quicksand", sans-serif;
+  background-color: rgb(133, 117, 98);
+  border-radius: 15px;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 18px 2.4rem;
+  margin-bottom: 1rem;
+  margin-top: 25px;
+  height: 20px;
   position: relative;
 }
 
@@ -279,9 +299,5 @@ p {
 
   .cart-button > button {
     margin-left: 300px;
-  }
-
-  .back-link > a {
-    margin-left: 350px;
   }
 }
