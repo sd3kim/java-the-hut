@@ -1,7 +1,5 @@
-// npm i --save pg
-//destructure Pool from pg
 const { Pool } = require("pg");
-//create a new Pool connection with our credentials
+
 const pool = new Pool({
   user: process.env.DB_USERNAME,
   host: process.env.DB_HOST,

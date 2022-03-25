@@ -1,10 +1,8 @@
 const db = require("../config/database");
 
-// show all items in cart page
 async function index(req, res, next) {
   try {
     const { rows } = await db.query("SELECT * FROM orders");
-    console.log(rows);
     res.render("javahut/cart", { order: rows });
   } catch (err) {
     next(err);
