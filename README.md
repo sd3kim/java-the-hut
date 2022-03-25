@@ -17,10 +17,10 @@ This project was created in collaboration with:
 ### **Screenshots**
 
 ![Main Page](./public/images/screenshots/home.png)
-![Menu-Drinks Page](./public/images/screenshots/menu-drinks.png)
-![Menu-Food Page](./public/images/screenshots/menu-food.png)
-![Product Page - Drinks](./public/images/screenshots/product-drinks.png)
-![Product Page - Food](./public/images/screenshots/product-food.png)
+![Menu-Drinks Page](./public/images/screenshots/drinks-menu.png)
+![Menu-Food Page](./public/images/screenshots/food-menu.png)
+![Product Page - Drinks](./public/images/screenshots/drink-product.png)
+![Product Page - Food](./public/images/screenshots/food-product.png)
 ![Cart Page](./public/images/screenshots/cart.png)
 ![Order Page](./public/images/screenshots/order.png)
 
