@@ -16,12 +16,12 @@ This project was created in collaboration with:
 
 ### **Screenshots**
 
-![Main Page](./images/screenshots/home.png)
-![Menu-Drinks Page](./images/screenshots/menu-drinks.png)
-![Menu-Food Page](./images/screenshots/menu-food.png)
-![Product Page - Drinks](./images/screenshots/product-drinks.png)
-![Product Page - Food](./images/screenshots/product-food.png)
-![Cart Page](./images/screenshots/cart.png)
+![Main Page](./public/images/screenshots/home.png)
+![Menu-Drinks Page](./public/images/screenshots/menu-drinks.png)
+![Menu-Food Page](./public/images/screenshots/menu-food.png)
+![Product Page - Drinks](./public/images/screenshots/product-drinks.png)
+![Product Page - Food](./public/images/screenshots/product-food.png)
+![Cart Page](./public/images/screenshots/cart.png)
 ![Order Page](./img/game-lose.png)
 
 ---
