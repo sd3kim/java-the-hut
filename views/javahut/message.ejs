@@ -36,29 +36,46 @@
             <h1>Thank you!</h1>
             <p id ="order-placed">Your order has been placed: </p>
             <% order.forEach(function(product){%>
-                <p class="product-name"><%=product.name%></p>
-                <% if(product.drink_id && product.customization_cream===0 && product.customization_milk===0 && product.customization_sugar===0){%>
+                <p class="product-name"><%=product.name%></p> 
+                <% if (product.drink_id && product.customization_cream === 0 && product.customization_milk === 0 && product.customization_sugar === 0) {%>
                   No Cream | No Milk | No Sugar  <%}%>   
-                <% if (product.drink_id && product.customization_cream!==0 && product.customization_milk!==0 && product.customization_sugar!==0) {%> 
-                  Cream: <%=product.customization_cream%> 
-                  | Milk: <%=product.customization_milk %> 
-                  | Sugar: <%=product.customization_sugar %> 
-                 <% } if(product.customization_milk===0 && product.customization_sugar!==0 && product.customization_cream!==0 ){%>
-                  Cream: <%=product.customization_cream%>
+                <% if (product.drink_id && product.customization_cream !== 0 && product.customization_milk !== 0 && product.customization_sugar !== 0) {%> 
+                  Cream: <%= product.customization_cream%> 
+                  | Milk: <%= product.customization_milk %> 
+                  | Sugar: <%= product.customization_sugar %> 
+                <% } if (product.drink_id && product.customization_milk === 0 && product.customization_sugar !== 0 && product.customization_cream !== 0 ){%>
+                  Cream: <%= product.customization_cream %>
                   | No Milk
-                  | Sugar: <%=product.customization_sugar %> 
-                   <% } else if(product.customization_cream===0 && product.customization_milk!==0 && product.customization_sugar!==0){%>
+                  | Sugar: <%= product.customization_sugar %> 
+                  <% } %>  
+                  <% if(product.drink_id && product.customization_cream === 0 && product.customization_milk !== 0 && product.customization_sugar !== 0){%>
                     No Cream 
+                    | Milk: <%= product.customization_milk %>
+                    | Sugar: <%= product.customization_sugar %> 
+                  <% } %> 
+                  <% if(product.drink_id && product.customization_cream !== 0 && product.customization_milk !== 0 && product.customization_sugar === 0){%>
+                    Cream: <%=product.customization_cream %> 
                     | Milk: <%=product.customization_milk%>
-                    | Sugar: <%=product.customization_sugar %> 
-                    <% } else if(product.customization_cream!==0 && product.customization_milk!==0 && product.customization_sugar===0){%>
-                      Cream: <%=product.customization_cream %> 
-                      | Milk: <%=product.customization_milk%>
-                      | No Sugar
-                      <%}%>
-                      <br>
-                       price: $<%=product.price%>   
-                      <%})%>
+                    | No Sugar
+                  <%} %>
+                  <% if(product.drink_id && product.customization_cream !== 0 && product.customization_milk === 0 && product.customization_sugar === 0){%>
+                    Cream: <%=product.customization_cream %> 
+                    | No Milk
+                    | No Sugar
+                  <%}%>
+                  <% if(product.drink_id && product.customization_cream === 0 && product.customization_milk !== 0 && product.customization_sugar === 0){%>
+                    No Cream
+                    | Milk: <%=product.customization_milk %>
+                    | No Sugar
+                  <%}%>
+                  <% if(product.drink_id && product.customization_cream === 0 && product.customization_milk === 0 && product.customization_sugar !== 0){%>
+                    No Cream
+                    | No Milk
+                    | Sugar: <%=product.customization_sugar %>
+                  <%}%>
+                  <br>
+                  price: $<%=product.price%>  
+                  <%})%>
           </div>
       </div>
       <div id="hut-logo">
