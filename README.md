@@ -64,3 +64,4 @@ Users can browse through the menu page to select a hot/cold drink or fresh baked
   - User reward page linked to OAUTH.
 - Show total price of order.
 - Quantity button in the cart to avoid repated items.
+- When adding product to cart, show notification/alert that the order has been added.
