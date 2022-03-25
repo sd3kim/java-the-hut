@@ -9,17 +9,19 @@ Café Java Hut is an e-commerce website designed to make ordering your favourite
 ## **Café Java Hut**
 
 This project was created in collaboration with:
-[Zahra Abdulrashid](https://github.com/zarax7)
+
+- [Zahra Abdulrashid](https://github.com/zarax7)
 
 ---
 
 ### **Screenshots**
 
-![Main Page](./img/game-start.png)
-![Menu Page](./img/game-win.png)
-![Product Page - Drinks](./img/game-lose.png)
-![Product Page - Food](./img/game-lose.png)
-![Cart Page](./img/game-lose.png)
+![Main Page](./images/screenshots/home.png)
+![Menu-Drinks Page](./images/screenshots/menu-drinks.png)
+![Menu-Food Page](./images/screenshots/menu-food.png)
+![Product Page - Drinks](./images/screenshots/product-drinks.png)
+![Product Page - Food](./images/screenshots/product-food.png)
+![Cart Page](./images/screenshots/cart.png)
 ![Order Page](./img/game-lose.png)
 
 ---
@@ -39,9 +41,10 @@ This project was created in collaboration with:
 
 ### **Planning**
 
-[Trello Board](https://trello.com/b/i0p0BKKS/cafe-java-hut)
-[ERD](https://lucid.app/lucidchart/3bce58a4-37e2-41c4-8abb-6aee2465d48b/edit?invitationId=inv_003b0436-a5b6-4f53-93bd-3dfff426ffe4)
-![ERD](./public/images/erd.png)
+- [Trello Board](https://trello.com/b/i0p0BKKS/cafe-java-hut)
+
+- [ERD](https://lucid.app/lucidchart/3bce58a4-37e2-41c4-8abb-6aee2465d48b/edit?invitationId=inv_003b0436-a5b6-4f53-93bd-3dfff426ffe4)
+  ![ERD](./public/images/erd.png)
 
 ---
 
