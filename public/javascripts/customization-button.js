@@ -9,7 +9,6 @@ let totalCream = 0;
 let totalMilk = 0;
 let totalSugar = 0;
 
-// add/sub cream
 function subCreamTotal() {
   if (totalCream <= 0) {
     return;
@@ -24,7 +23,6 @@ function addCreamTotal() {
   updateCountDisplay();
 }
 
-// add/sub milk
 function subMilkTotal() {
   if (totalMilk <= 0) {
     return;
@@ -39,7 +37,6 @@ function addMilkTotal() {
   updateCountDisplay();
 }
 
-// add/sub sugar
 function subSugarTotal() {
   if (totalSugar <= 0) {
     return;
