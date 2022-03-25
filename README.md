@@ -22,7 +22,7 @@ This project was created in collaboration with:
 ![Product Page - Drinks](./public/images/screenshots/product-drinks.png)
 ![Product Page - Food](./public/images/screenshots/product-food.png)
 ![Cart Page](./public/images/screenshots/cart.png)
-![Order Page](./img/game-lose.png)
+![Order Page](./public/images/screenshots/order.png)
 
 ---
 
