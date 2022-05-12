@@ -4,7 +4,7 @@ Café Java Hut is an e-commerce website designed to make ordering your favourite
 
 ---
 
-## **Café Java Hut**
+## Collaborators
 
 This project was created in collaboration with:
 
