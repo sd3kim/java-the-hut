@@ -1,6 +1,4 @@
-# Project-2
-
-## **Café Java Hut**
+# **Café Java Hut**
 
 Café Java Hut is an e-commerce website designed to make ordering your favourite café drink or baked good a breeze.
 
